@@ -9,6 +9,7 @@ System.config({
 
 		'app': 'js/app.js',
 		'requester': 'js/requester.js',
+		'data': 'js/data.js',
 		'constants': 'js/utils/constants.js',
         'homeController': 'js/controllers/homeController.js',
 		'templates': 'js/templates.js'

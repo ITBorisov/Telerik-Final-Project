@@ -1,6 +1,14 @@
-import { requester } from 'requester';
-import { CONSTANTS } from 'constants';
+import * as requester from 'requester';
+import * as CONSTANTS from 'constants';
 
+
+export function getBooks(params){
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + params;
+        let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}
 export function registerUser(newUser, password) {
         let url = CONSTANTS.kinveyUsersUrl;
         let headers = CONSTANTS.kinveyBasicHeaders;
