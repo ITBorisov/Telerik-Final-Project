@@ -11,8 +11,11 @@ System.config({
 		'requester': 'js/requester.js',
 		'data': 'js/data.js',
 		'constants': 'js/utils/constants.js',
+		'templates': 'js/templates.js',
+
+		// controllers //
         'homeController': 'js/controllers/homeController.js',
-		'templates': 'js/templates.js'
+		'usersController': 'js/controllers/usersController.js',
 		
 		
 	}
