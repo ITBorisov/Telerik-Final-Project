@@ -1,4 +1,6 @@
 /*globals $, Sammy*/
+import 'logout';
+import 'navigationButtons';
 
 import { homeController } from 'homeController';
 import * as usersController from 'usersController';

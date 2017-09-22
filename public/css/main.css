@@ -1,0 +1,83 @@
+body {
+    padding: 20px 0 80px;
+    background: #f4f4f4 url("../images/body.png");
+    font-size: 12px;
+    color: #929292;
+}
+
+header, footer, .categoriesWrapper, .homeWrapper, .userWrapper, .cartWrapper {
+    margin-left: 7.6%;
+    margin-right: 8.2%;
+}
+/* navbar */
+
+.navbar{
+    min-height: 100px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.my-brand {
+    margin-left: 0;
+    padding-top: 25px;
+}
+
+.font-icons {
+    color: #e3e3e3;
+    margin-top: 12px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 15px;
+}
+
+.font-icons:hover {
+    color: #9b9b9b;
+}
+
+.nav-search {
+    margin-left: 15px;
+    margin-right: -13px;
+    margin-top: 1px;
+
+}
+
+#searchBar{
+    background-color: #f9f9f9;
+    border-radius: 0px;
+    border-top: none;
+    border-right: none;
+}
+
+.glyphicon-search {
+    font-size: 13px;
+    color: #c7c7c8;
+    margin-top: -3px;
+}
+
+.my-navbar{
+    margin-top:50px;
+    margin-bottom: 10px;
+}
+.my-navbar a {
+    font-family: "Kreon", serif;
+    font-size: 15px;
+    color: #717171;
+    margin-right: -5px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #75a0aa;
+}
+
+/* navbar - end */
+
+
+
+
+
+
+
+
+

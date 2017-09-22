@@ -10,8 +10,6 @@ export function getBooks(params){
         return requester.get(url, kinveyAuthHeaders);
 }
 export function registerUser(newUser, password) {
-        console.log(newUser);
-        console.log(password);
         let url = CONSTANTS.kinveyUsersUrl;
         let headers = CONSTANTS.kinveyBasicHeaders;
         let body = { "username": newUser, "password": password };
@@ -26,4 +24,11 @@ export function loginUser(user) {
         let body = { "username": user.username, "password": user.password };
 
         return requester.post(url, JSON.stringify(body), headers);
+}
+
+export function logoutUser(authtoken) {
+        let url = CONSTANTS.kinveyUsersUrl + '/_logout';
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+
+        return requester.post(url, {}, headers);
 }

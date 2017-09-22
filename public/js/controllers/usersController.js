@@ -29,8 +29,7 @@ export function loadLoginForm(context){
             let username = $('#username').val();
             let password = $('#password').val();
 
-            let user = {'username': username, 'password': password}
-
+            let user = { 'username': username, 'password': password };
             login(context, user)
         })
     })
@@ -47,6 +46,16 @@ function register(context, username, password){
 function login(context, user){
     loginUser(user)
     .then(response => {
-        console.log(response)
+        let username = response.username;
+        let authtoken = response._kmd.authtoken;
+        let userId = response._id;
+        sessionStorage.setItem('username', username);
+        sessionStorage.setItem('authtoken', authtoken);
+        sessionStorage.setItem('id', userId);
+
+        setTimeout(function () {
+                window.location.href = '#/home';
+                window.location.reload(true);
+            }, 100);
     })
 }

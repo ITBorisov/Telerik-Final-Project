@@ -6,5 +6,7 @@ const guestUserAuthToken = 'ab50ccf6-3b56-4a39-9c54-9e29afde564a.BGs3+rrwac05Uuy
 const kinveyAppDataUrl = 'https://baas.kinvey.com/appdata/kid_SJohzaC9-';
 const kinveyUsersUrl = 'https://baas.kinvey.com/user/kid_SJohzaC9-';
 
+const kinveyHeaderKey = 'Authorization';
+const kinveyUserAuthorization = 'Kinvey ';
 
-export { kinveyKey, kinveySecret, kinveyBasicHeaders, guestUserAuthToken, kinveyAppDataUrl, kinveyUsersUrl  };
+export { kinveyKey, kinveySecret, kinveyBasicHeaders, guestUserAuthToken, kinveyAppDataUrl, kinveyUsersUrl, kinveyUserAuthorization  };

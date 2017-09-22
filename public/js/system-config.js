@@ -10,7 +10,10 @@ System.config({
 		'app': 'js/app.js',
 		'requester': 'js/requester.js',
 		'data': 'js/data.js',
+
 		'constants': 'js/utils/constants.js',
+		'logout' : 'js/utils/logout.js',
+		'navigationButtons': 'js/utils/navigationButtons.js',
 		'templates': 'js/templates.js',
 
 		// controllers //
