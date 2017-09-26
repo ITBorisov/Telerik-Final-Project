@@ -3,7 +3,7 @@ import * as CONSTANTS from 'constants';
 
 
 export function getReviews(params){
-        let url = CONSTANTS.kinveyAppDataUrl + '/' + params;
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + params + '/' + '?query={}&sort={"_kmd": -1}';
         let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
         const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
 

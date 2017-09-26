@@ -13,12 +13,13 @@ export function addReviewController (context){
             let title = $('#title').val();
             let description = $('#description').val();
             let category = $('#category').val();
-
+            let reviewText = $('#review').val();
 
             let authtoken = sessionStorage.getItem('authtoken');
             let author = sessionStorage.getItem('username');
             let review  = {
                 author: author,
+                reviewText: reviewText,
                 title: title,
                 description: description,
                 category: category
