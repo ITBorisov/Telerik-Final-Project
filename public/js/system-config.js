@@ -19,6 +19,8 @@ System.config({
 		// controllers //
         'homeController': 'js/controllers/homeController.js',
 		'usersController': 'js/controllers/usersController.js',
+		'blogController': 'js/controllers/blogController.js',
+		'addReviewController': 'js/controllers/addReviewController.js'
 		
 		
 	}

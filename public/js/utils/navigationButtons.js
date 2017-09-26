@@ -10,5 +10,6 @@
         $('#buttonLogin').addClass('hidden');
         $('#buttonRegister').addClass('hidden');
         $('#buttonLogout').removeClass('hidden');
+        $('#buttonAddReview').removeClass('hidden');
     }
 })();

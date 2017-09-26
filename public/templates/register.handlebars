@@ -1,35 +1,47 @@
-		<div class="container">
-			<div class="row main">
-				<div class="panel-heading">
-	               <div class="panel-title text-center">
-	               		<h1 class="title">Регистрация</h1>
-	               		<hr />
-	               	</div>
-	            </div> 
-				<div class="main-login main-center">
-					<form id="register" class="form-horizontal" method="POST" >						
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Username</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></span>
-									<input type="text" required class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-								</div>
+<div class="blog-main">
+	<div class="container-fluid">
+		<p class="blog-path">
+			<a href="#/home">
+                Home
+            </a>
+			<span> &raquo; </span>
+			<a href="#/register">
+                Register
+            </a>
+		</p>
+		</p>
+		<div class="blog-title">
+			<h1>Register</h1>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-12">
+
+				<form id="register" class="form-horizontal" method="POST">
+					<div class="form-group">
+						<label for="username" class="col-sm-2 control-label">Username</label>
+						<div class="col-sm-8">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></span>
+								<input type="text" required class="form-control" name="username" id="username" placeholder="Enter your Username" />
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" required class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-								</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-8">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<input type="password" required class="form-control" name="password" id="password" placeholder="Enter your Password" />
 							</div>
 						</div>
-						<div class="form-group ">
-							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Регистрирай</button>
-						</div>						
-					</form>
-				</div>
+					</div>
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-auth">Register</button>
+					</div>
+				</form>
 			</div>
 		</div>
+	</div>
+</div>

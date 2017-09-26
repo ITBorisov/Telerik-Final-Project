@@ -11,6 +11,7 @@ import { logoutUser } from 'data';
                 $('#buttonLogin').removeClass('hidden');
                 $('#buttonRegister').removeClass('hidden');
                 $('#buttonLogout').addClass('hidden');
+                $('#buttonAddReview').addClass('hidden');
                
 
                 sessionStorage.clear();

@@ -2,13 +2,21 @@ import * as requester from 'requester';
 import * as CONSTANTS from 'constants';
 
 
-export function getBooks(params){
+export function getReviews(params){
         let url = CONSTANTS.kinveyAppDataUrl + '/' + params;
         let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
         const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
 
         return requester.get(url, kinveyAuthHeaders);
 }
+
+export function addReview(params, authtoken){
+        let url = CONSTANTS.kinveyAppDataUrl + '/reviews' ;
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+        let body = params;
+        return requester.post(url, JSON.stringify(body), headers);
+}
+
 export function registerUser(newUser, password) {
         let url = CONSTANTS.kinveyUsersUrl;
         let headers = CONSTANTS.kinveyBasicHeaders;
