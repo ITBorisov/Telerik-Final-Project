@@ -10,6 +10,14 @@ export function getReviews(params){
         return requester.get(url, kinveyAuthHeaders);
 }
 
+export function getReview(params, id){
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + params + '/' + id;
+        let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}
+
 export function addReview(params, authtoken){
         let url = CONSTANTS.kinveyAppDataUrl + '/reviews' ;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };

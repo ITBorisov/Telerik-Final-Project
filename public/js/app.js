@@ -5,6 +5,7 @@ import 'navigationButtons';
 import { homeController } from 'homeController';
 import { blogController } from 'blogController';
 import { addReviewController } from 'addReviewController';
+import { reviewController } from 'reviewController';
 import * as usersController from 'usersController';
 
 (function () {
@@ -21,6 +22,8 @@ import * as usersController from 'usersController';
 		this.get('#/login', usersController.loadLoginForm);
 
 		this.get('#/reviews/add', addReviewController);
+
+		this.get('#/reviews/:id', reviewController)
 
 	});
 

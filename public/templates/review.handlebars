@@ -16,13 +16,12 @@
         </div>
         <div class="row">
             <div class="col-sm-9">
-              {{#each review}}
                 <div class="blog-list">
                     <div class="blog-review">
-                        <a href="#/"><h3>{{title}}</h3></a>
+                        <a href="#/"><h3>{{review.title}}</h3></a>
                         <div class="review-meta">
-                            <p>Posted by <span class="darker">{{author}}</span>
-                                on date in <span class="darker">{{category}}</span>
+                            <p>Posted by <span class="darker">{{review.author}}</span>
+                                on date in <span class="darker">{{review.category}}</span>
                                 | 1 Comments
                             </p>
                         </div>
@@ -36,8 +35,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
-                                    <p>{{description}}</p>
-                                    <a href="#/reviews/{{_id}}" class="btn btn-custom">Read More</a>
+                                    <p>{{review.reviewText}}</p>
+                                    <a href="#/reviews/{{category}}/{{_id}}" class="btn btn-custom">Read More</a>
                                 </div>
                             </div>
 
@@ -45,7 +44,6 @@
                     </div>
                     
                  </div>
-              {{/each}}
             </div>
             <div class="col-sm-3">
                 <aside class="sidebar">

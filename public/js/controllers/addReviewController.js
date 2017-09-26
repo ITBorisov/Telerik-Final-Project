@@ -13,8 +13,9 @@ export function addReviewController (context){
             let title = $('#title').val();
             let description = $('#description').val();
             let category = $('#category').val();
-            let reviewText = $('#review').val();
+            let reviewText = $('#reviewText').val();
 
+            
             let authtoken = sessionStorage.getItem('authtoken');
             let author = sessionStorage.getItem('username');
             let review  = {
