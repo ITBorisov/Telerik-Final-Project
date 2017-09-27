@@ -6,6 +6,7 @@ import { homeController } from 'homeController';
 import { blogController } from 'blogController';
 import { addReviewController } from 'addReviewController';
 import { reviewController } from 'reviewController';
+import { reviewsCategoryController } from 'reviewsCategoryController';
 import * as usersController from 'usersController';
 
 (function () {
@@ -22,6 +23,18 @@ import * as usersController from 'usersController';
 		this.get('#/login', usersController.loadLoginForm);
 
 		this.get('#/reviews/add', addReviewController);
+
+		this.get('#/reviews/Action', reviewsCategoryController)
+		
+		this.get('#/reviews/Comedy', reviewsCategoryController)
+
+		this.get('#/reviews/Crime', reviewsCategoryController)
+
+		this.get('#/reviews/Drama', reviewsCategoryController)
+
+		this.get('#/reviews/Thriller', reviewsCategoryController)
+
+		this.get('#/reviews/Sci-fi', reviewsCategoryController)
 
 		this.get('#/reviews/:id', reviewController)
 

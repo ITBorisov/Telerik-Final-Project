@@ -26,6 +26,15 @@ export function getLatestReview(params){
         return requester.get(url, kinveyAuthHeaders);
 }
 
+export function getReviewsCategory(params, category){
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + params + '/' + '?query={"category":' + '"' + category + '"}';
+        console.log(url);
+        let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}
+
 export function addReview(params, authtoken){
         let url = CONSTANTS.kinveyAppDataUrl + '/reviews' ;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };

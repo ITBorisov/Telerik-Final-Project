@@ -21,7 +21,8 @@ System.config({
 		'usersController': 'js/controllers/usersController.js',
 		'blogController': 'js/controllers/blogController.js',
 		'addReviewController': 'js/controllers/addReviewController.js',
-		'reviewController': 'js/controllers/reviewController.js'
+		'reviewController': 'js/controllers/reviewController.js',
+		'reviewsCategoryController': 'js/controllers/reviewsCategoryController.js'
 		
 		
 	}

@@ -3,6 +3,7 @@ import { getReviews as getReviews } from 'data';
 
 
 export function blogController (context){
+
     Promise.all([getReviews('reviews'), loadTemplate('blog') ])
         .then(([dataResponse, template]) => {
             
