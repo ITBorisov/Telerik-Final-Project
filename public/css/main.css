@@ -376,7 +376,7 @@ header, footer,  .home-main, .blog-main {
 }
 
 
-.review-content .btn-custom {
+ .btn-custom {
     background: none;
     font-weight: bold;
     color: #1d1d1d;
@@ -387,10 +387,10 @@ header, footer,  .home-main, .blog-main {
     margin-top: 10px;
     border: 1px solid #f0f0f0;
   }
-.review-content .btn-custom a{
+ .btn-custom a{
     color: #1d1d1d;
 }
-.review-content .btn-custom:hover {
+ .btn-custom:hover {
       color: #fff;
       background: #437d8b;
 }
@@ -507,7 +507,27 @@ footer .copyright {
 /* FOOTER END */
 
 
+/* Review Comments */
+.add-comment{
+    padding-bottom: 70px;
+}
+.comment-info{
+    width: 300px;
+ 
+}
+.form-group{
+    margin-bottom: 1px;
+}
 
+.comment-input{
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: inset -4px -2px 40px -3px rgba(1,2,2,0.055)
+
+      
+}
+
+/* Review Comments END */
 
 
 /* media */
@@ -527,7 +547,10 @@ footer .copyright {
         margin: -25px 0 0 45px;
         font-size: 8px;
     }
-
+    .comment-info{
+    width: 100%;
+ 
+    }
     
     
 }
