@@ -7,13 +7,14 @@ export function reviewsCategoryController (context){
 
     let path = context.path;
     let category = path.substring(11)
-    console.log(category)
-    Promise.all([getReviewsCategory('reviews', category), loadTemplate('blog') ])
+    
+    Promise.all([getReviewsCategory('reviews', category), loadTemplate('reviewsCategory') ])
         .then(([dataResponse, template]) => {
             let reviews = {
-				review: dataResponse
+				review: dataResponse,
+                categoryPath: category
 			};
-
+            console.log(reviews)
             context.$element().html(template(reviews));
         })   
     
