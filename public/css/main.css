@@ -394,6 +394,9 @@ header, footer,  .home-main, .blog-main {
       color: #fff;
       background: #437d8b;
 }
+.darker{
+    color: #437d8b;
+}
 /* BLOG - SECTION */
 
 
@@ -524,6 +527,8 @@ footer .copyright {
         margin: -25px 0 0 45px;
         font-size: 8px;
     }
+
+    
     
 }
 
