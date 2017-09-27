@@ -14,8 +14,10 @@ export function addReviewController (context){
             let description = $('#description').val();
             let category = $('#category').val();
             let reviewText = $('#reviewText').val();
+            let currentDate = getDate();
 
-            
+           
+
             let authtoken = sessionStorage.getItem('authtoken');
             let author = sessionStorage.getItem('username');
             let review  = {
@@ -23,7 +25,8 @@ export function addReviewController (context){
                 reviewText: reviewText,
                 title: title,
                 description: description,
-                category: category
+                category: category,
+                date: currentDate
             }
             
             
@@ -31,4 +34,22 @@ export function addReviewController (context){
 
         })
         })
+}
+
+function getDate(){
+    Date.prototype.getMonthName = function () {
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        return months[this.getMonth()];
+    };
+
+
+    let date = new Date();
+    let month = date.getMonthName();
+    let day = date.getDate();
+    let year = date.getFullYear();
+
+    let currentDate = month + ' ' + day + ', ' + year
+
+    return currentDate;
 }
