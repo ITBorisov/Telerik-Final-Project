@@ -42,6 +42,15 @@ export function addReview(params, authtoken){
         return requester.post(url, JSON.stringify(body), headers);
 }
 
+
+export function getLatestUsers(){
+        let url = CONSTANTS.kinveyUsersUrl + '/' + '?query={}&sort={"_kmd": -1}&limit=6';
+        let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}
+
 export function registerUser(newUser, password) {
         let url = CONSTANTS.kinveyUsersUrl;
         let headers = CONSTANTS.kinveyBasicHeaders;
