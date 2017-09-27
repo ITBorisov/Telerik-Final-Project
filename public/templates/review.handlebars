@@ -38,7 +38,7 @@
                             <div class="row">              
                                 <div class="thumbnail">
                                     <a href="#/">
-                                        <img src="https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg" alt="zaglavie">
+                                        <img src="https://i.pinimg.com/originals/a8/37/c7/a837c77e6706bccd25cf0b63c4edabdf.jpg" alt="zaglavie">
                                     </a>
                                 </div>
                                 <p>{{review.reviewText}}</p>
@@ -87,11 +87,20 @@
                         </li>
                     </ul>
                 
-                
+                    <h3>
+                        New reviews
+                    </h3>
+                    <ul>
+                        {{#each newReviews}}
+                        <li>
+                            <a href="#/reviews/{{_id}}">{{title}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
 
                  
                       <h3>
-                        Newest users
+                        New users
                     </h3>
                     <ul>
                         {{#each users}}
@@ -99,32 +108,6 @@
                             <a href="#/">{{username}}</a>
                         </li>
                         {{/each}}
-                    </ul>
-                
-
-                 
-                     <h3>
-                        Lorem lorem
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
                     </ul>
                 
                 </aside>
