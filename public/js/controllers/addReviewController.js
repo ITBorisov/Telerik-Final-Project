@@ -32,6 +32,7 @@ export function addReviewController (context){
             
             addReview(review, authtoken)
                 .then(response => {
+                    toastr.success('Successfully created new review');
                     context.redirect('#/reviews');
                 })
 

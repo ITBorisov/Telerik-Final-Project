@@ -529,8 +529,9 @@ footer .copyright {
 
 /* Review Comments END */
 
-.over{
-    
+.home-description{
+    height: 70px;
+    overflow: hidden;
 }
 /* media */
 
