@@ -179,10 +179,10 @@ header, footer,  .home-main, .blog-main {
 
 .carousel-caption {
     left: initial;
-    right: 4%;
-    top: 14%;
-    width: 45%;
-    height: 68%;
+    right: 5.5%;
+    top: 14.9%;
+    width: 42.7%;
+    height: 71%;
     background: rgba(0, 0, 0, 0.70);
     text-align: left;
     padding: 5%;
@@ -202,7 +202,7 @@ header, footer,  .home-main, .blog-main {
     background-color: #fff;
 }
 .home-main .home-section {
-    margin-top: 8px; 
+    margin-top: 5px; 
 }
 .home-main .home-section .container-fluid {
       padding-left: 30px;
@@ -232,7 +232,7 @@ header, footer,  .home-main, .blog-main {
     padding-left: 15px;
 }
 .home-main .home-section .img-responsive {
-    width:100%;
+    width:240px;
     height:125px;
     object-fit:cover;
 }
@@ -554,6 +554,10 @@ footer .copyright {
     width: 100%;
  
     }
+    .home-main .home-section .img-responsive {
+    width:100%;
+    
+}
     
     
 }
