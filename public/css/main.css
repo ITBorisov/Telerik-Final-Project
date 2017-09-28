@@ -131,7 +131,7 @@ header, footer,  .home-main, .blog-main {
 }
 #myCarousel .item img{
       width:100%;
-      height:410px;
+      height:330px;
 }
 
 /* dots */
@@ -231,9 +231,9 @@ header, footer,  .home-main, .blog-main {
 .home-main .home-section ul {
     padding-left: 15px;
 }
-.home-main .home-section .img-thumbnail {
+.home-main .home-section .img-responsive {
     width:100%;
-    height:220px;
+    height:125px;
     object-fit:cover;
 }
 .home-main .home-section li {
