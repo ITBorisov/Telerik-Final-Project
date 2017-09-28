@@ -14,9 +14,16 @@ export function addReviewController (context){
             let description = $('#description').val();
             let category = $('#category').val();
             let reviewText = $('#reviewText').val();
+            
             let currentDate = getDate();
-
-           
+            /* upload image */
+            let images = [];
+				if ($('#imgContainer').find('img').length > 0) {
+					let imagesFromForm = $('#imgContainer').find('img').each((i, img) => {
+						let $img = $(img);
+						images.push($img.attr('src'));
+					});
+				}
 
             let authtoken = sessionStorage.getItem('authtoken');
             let author = sessionStorage.getItem('username');
@@ -26,7 +33,8 @@ export function addReviewController (context){
                 title: title,
                 description: description,
                 category: category,
-                date: currentDate
+                date: currentDate,
+                img: images
             }
             
             

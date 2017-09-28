@@ -34,7 +34,11 @@
                             <div class="row">  
                                 <div class="thumbnail">
                                     <a href="#/">
-                                        <img src="https://i.pinimg.com/originals/a8/37/c7/a837c77e6706bccd25cf0b63c4edabdf.jpg" alt="zaglavie">
+                                    {{#if img}}
+                                        <img src="{{img}}" class="img-thumbnail"> 
+                                    {{else}}
+                                        <img src="https://i.pinimg.com/736x/06/6f/2c/066f2caf0b4220c70a2fb676ad0cc673--fun-movies-watch-movies.jpg" class="img-thumbnail">                                        
+                                    {{/if}}
                                     </a>
                                 </div>
                                 <p>{{description}}</p>

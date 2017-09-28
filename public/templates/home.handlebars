@@ -98,7 +98,11 @@
                     <h3 href="#/">
                         {{title}}
                     </h3>
+                    {{#if img}}
+                    <img src="{{img}}" class="img-thumbnail">
+                    {{else}}
                     <img src="https://i.pinimg.com/736x/06/6f/2c/066f2caf0b4220c70a2fb676ad0cc673--fun-movies-watch-movies.jpg" class="img-thumbnail">
+                    {{/if}}
                     <p class="home-description">{{description}}</p>
                 </div>
                 {{/each}}

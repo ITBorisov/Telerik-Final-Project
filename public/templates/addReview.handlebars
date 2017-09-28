@@ -63,6 +63,37 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Upload images</label>
+                        <div class="col-sm-8 inputGroupContainer">
+                            <input id="file" type="file" class="form-control" name="uploadedImage" onchange="show(this)" multiple="multiple" />
+                        </div>
+                    </div>
+                    <div id="imgContainer" class="col-sm-12"></div>
+
+
+                    <script>
+                        function show(input) {
+                            if (input.files && input.files[0]) {
+                                let imgId = 1;
+                                for (let img of input.files) {
+                                    let filerdr = new FileReader();
+                                    filerdr.onload = function (e) {
+                                        $('<div>').addClass('col-sm-12')
+                                            .append($('<img>')
+                                                .attr('name', 'uploadedImage' + imgId)
+                                                .attr('src', e.target.result)
+                                                .addClass('img-thumbnail'))
+                                            .appendTo('#imgContainer');
+                                    }
+
+                                    filerdr.readAsDataURL(img);
+                                    imgId += 1;
+                                }
+                            }
+                        }
+                    </script>
+                    
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-auth">ADD NEW REVIEW</button>
                     </div>
