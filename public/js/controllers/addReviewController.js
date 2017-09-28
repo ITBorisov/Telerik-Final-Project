@@ -31,6 +31,9 @@ export function addReviewController (context){
             
             
             addReview(review, authtoken)
+                .then(response => {
+                    context.redirect('#/reviews');
+                })
 
         })
         })

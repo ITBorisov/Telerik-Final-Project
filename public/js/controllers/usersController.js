@@ -39,13 +39,19 @@ export function loadLoginForm(context){
 function register(context, username, password){
     registerUser(username, password)
         .then(respose => {
-            console.log(respose);
+            toastr.success('Successful registration')
+
+            setTimeout(function () {
+                window.location.href = '#/login';
+                window.location.reload(true);
+            }, 1000);
         })
 }
 
 function login(context, user){
     loginUser(user)
     .then(response => {
+        toastr.success('Successful login');
         let username = response.username;
         let authtoken = response._kmd.authtoken;
         let userId = response._id;
@@ -56,6 +62,6 @@ function login(context, user){
         setTimeout(function () {
                 window.location.href = '#/home';
                 window.location.reload(true);
-            }, 100);
+            }, 1000);
     })
 }

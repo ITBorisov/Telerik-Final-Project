@@ -15,7 +15,7 @@ import { logoutUser } from 'data';
                
 
                 sessionStorage.clear();
-                console.log('Uspeshno')
+                toastr.success('Successful logout');
             }, error => {
                 console.log('Neuspeshno')
             });
