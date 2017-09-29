@@ -1,6 +1,5 @@
 body {  
     background: #f4f4f4 url("../images/body.png");
-    padding: 20px 0 80px;
     font-size: 12px;
     color: #929292;
 }
@@ -24,7 +23,7 @@ header, footer,  .home-main, .blog-main {
 }
 
 .navbar .my-brand {
-    margin-left: 0;
+    margin-left: 15px;
     padding-top: 25px;
 }
 .navbar .logo-slogan {
@@ -53,32 +52,42 @@ header, footer,  .home-main, .blog-main {
     margin-top: 1px;
 
 }
+.navbar .nav-search .input-group{
+    width: 162px;
+}
 
 .navbar .nav-search #searchBar{
+    font-family: 'Georgia';
+    font-size: 11px;
     background-color: #f9f9f9;
     border-radius: 0px;
     border-top: none;
     border-right: none;
     font-style: italic;
+    padding-left: 13px;
 }
 
 .navbar .nav-search #searchBar .glyphicon-search {
     font-size: 13px;
-    color: #c7c7c8;
+    color: #c2c3c2;
     margin-top: -3px;
 }
 
 .navbar .my-navbar{
     margin-top:50px;
     margin-bottom: 10px;
+
 }
 .navbar .my-navbar a {
     font-family: "Kreon", serif;
     font-size: 15px;
     color: #717171;
-    margin-right: -5px;
 }
 
+.navbar-nav > li > a{
+    padding-top: 8px;
+    padding-right: 7px;
+}
 .navbar .navbar-nav > li > a:hover {
     color: #437d8b;
 }
