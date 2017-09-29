@@ -8,6 +8,7 @@ import { blogController } from 'blogController';
 import { addReviewController } from 'addReviewController';
 import { reviewController } from 'reviewController';
 import { reviewsCategoryController } from 'reviewsCategoryController';
+import { profileController } from 'profileController';
 import * as usersController from 'usersController';
 
 (function () {
@@ -22,6 +23,8 @@ import * as usersController from 'usersController';
         this.get('#/register', usersController.loadRegistrationForm);
 
 		this.get('#/login', usersController.loadLoginForm);
+
+		this.get('#/profile', profileController)
 
 		this.get('#/reviews/add', addReviewController);
 

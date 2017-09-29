@@ -74,3 +74,10 @@ export function logoutUser(authtoken) {
 
         return requester.post(url, {}, headers);
 }
+
+
+export function getUserProfileById(userId, authtoken) {
+        let url = CONSTANTS.kinveyUsersUrl + '/' + userId
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+        return requester.get(url, headers);
+}

@@ -23,7 +23,8 @@ System.config({
 		'blogController': 'js/controllers/blogController.js',
 		'addReviewController': 'js/controllers/addReviewController.js',
 		'reviewController': 'js/controllers/reviewController.js',
-		'reviewsCategoryController': 'js/controllers/reviewsCategoryController.js'
+		'reviewsCategoryController': 'js/controllers/reviewsCategoryController.js',
+		'profileController': 'js/controllers/profileController.js'
 		
 		
 	}
