@@ -26,10 +26,12 @@ header, footer,  .home-main, .blog-main {
 }
 
 .navbar .my-brand {
+    padding: 15px 30px;
     margin-left: 15px;
     padding-top: 30px;
 }
 .navbar .logo-slogan {
+    font-family: "Kreon", serif;
     font-size: 11px;
     color: #437d8b;
     font-weight: bold;
@@ -148,6 +150,7 @@ header, footer,  .home-main, .blog-main {
 #myCarousel .item img{
       width:100%;
       height:330px;
+    
 }
 
 /* dots */
@@ -570,13 +573,20 @@ footer .copyright {
  
 }
 .form-group{
-    margin-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 .comment-input{
-    border: 0px;
+    border: 1px solid #f0f0f0;
     border-radius: 0px;
-    box-shadow: inset -4px -2px 40px -3px rgba(1,2,2,0.055)
+       background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 );
+    /* IE6-9 */
 
       
 }
@@ -608,7 +618,7 @@ footer .copyright {
         min-height: 53px;
     }
     .navbar .my-brand {
-        padding-top: 9px;
+        padding: 5px;
     }
     .navbar .my-brand img {
         width: 160px;
