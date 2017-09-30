@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kreon:300,400,700');
+
 body {  
     background: #f4f4f4 url("../images/body.png");
     font-size: 12px;
@@ -80,8 +83,9 @@ header, footer,  .home-main, .blog-main {
 }
 .navbar .my-navbar a {
     font-family: "Kreon", serif;
+    font-weight: 300;
     font-size: 15px;
-    color: #717171;
+    color: #000;
 }
 
 .navbar-nav > li > a{
@@ -100,7 +104,9 @@ header, footer,  .home-main, .blog-main {
 
 .home-main .sub-nav{
     background: url("../images/subNav.jpg");
-    font-family: "Kreon", serif;
+    color: #000; 
+    font-family: "Kreon";
+    font-weight: 300;
     font-size: 15px;    
     background-size: cover;
     text-transform: uppercase;
@@ -117,7 +123,8 @@ header, footer,  .home-main, .blog-main {
     padding-right:15px;
 }
 .home-main .sub-nav li a {
-        color: #717171; 
+        color: #000; 
+        font-family: "Kreon";
 }
 .home-main .sub-nav li a:hover {
     color: #437d8b;
@@ -198,7 +205,7 @@ header, footer,  .home-main, .blog-main {
 }
 .carousel-caption h3 {
     font-family: "Kreon", serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 100;
     margin-top: 0;
     color: #fff;
@@ -256,7 +263,10 @@ header, footer,  .home-main, .blog-main {
       color: #929292; 
 }
 .home-main .home-section .row h3{
-    font-family: "Droid Sans", sans-serif;
+    font-size: 20px;
+    font-family: "Kreon", serif;
+    font-weight: 300;
+    color: #000;
     padding-left: 5px;
 }
 
@@ -313,18 +323,22 @@ header, footer,  .home-main, .blog-main {
 /* BLOG - MAIN START */
 .blog-main{
     background-color: #fff;
-    font-family: "Kreon", serif;
+    font-family: "Droid", serif;
 }
 .blog-main .container-fluid {
     padding-left: 5%;
     padding-right: 5%; 
 }
 .blog-main h1 {
+    font-family: "Kreon";
+    font-weight: 300;
     font-size: 25px;
     color: #1d1d1d;
     margin-bottom: 5px; 
 }
 .blog-main h3 {
+    font-family: "Kreon";
+    font-weight: 300;
     font-size: 20px;
     color: #929292;
     margin-top: 0; 
@@ -376,6 +390,7 @@ header, footer,  .home-main, .blog-main {
   margin-right: 20px;
   margin-bottom: 20px;
   float: left;
+  border-radius: 0px;
   
 }
 .review-content .thumbnail img {
@@ -484,6 +499,7 @@ footer li a {
 footer h3 {
     color: #1d1d1d;
     font-family: "Kreon", serif;
+    font-weight: 300;
     font-size: 20px;
     margin-top:0px;
     margin-bottom: 13px; 
