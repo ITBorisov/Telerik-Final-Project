@@ -305,11 +305,15 @@ header, footer,  .home-main, .blog-main {
    padding-left: 35px;
    padding-right: 35px;
    height: 85px;
+  
 }
 /* MEDIA CAROUSEL */
 
 .media-carousel{
-    background-color: #F4F4F4;
+    background-color: #fff;
+    border:1px solid #ececec;
+    border-bottom: 2px solid #ececec;
+    border-radius: 5px;
     padding: 10px;
 }
 .media-carousel .item > img{
