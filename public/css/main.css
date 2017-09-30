@@ -301,7 +301,11 @@ header, footer,  .home-main, .blog-main {
 .testov{
     margin-bottom: 20px;
 }
-
+.mediaw{
+   padding-left: 35px;
+   padding-right: 35px;
+   height: 85px;
+}
 /* MEDIA CAROUSEL */
 
 .media-carousel{
@@ -309,13 +313,13 @@ header, footer,  .home-main, .blog-main {
     padding: 10px;
 }
 .media-carousel .item > img{
-    background-color: #D7D7D7;
+    background-color: #fff;
     float: left;
-    width: 70px;
-    height: 100px;
-    margin-left: 22px;
-    padding: 5px;
-    border: 1px solid lightgray;
+    width: 55px;
+    height: 55px;
+    margin-left: 18px;
+    padding: 3px;
+    border: 1px solid #f0f0f0;
     box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -590,6 +594,10 @@ footer .copyright {
 	
 /* media */
 
+@media (max-width: 991px) {
+  
+}
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -630,13 +638,6 @@ footer .copyright {
     
 }
 
-
-@media (max-width: 991px) {
-    .testov{
-        display: none
-    }
-}
-
 @media (max-width: 767px) {
     .font-icons {
         display: none;
@@ -664,8 +665,8 @@ footer .copyright {
     .main-slider{
         display: none;
     }
-    .home-section{
-        padding-top: 0px;
+    .home-main .home-section{
+        margin-top:0px;
     }
     
 }
