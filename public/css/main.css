@@ -235,23 +235,44 @@ header, footer,  .home-main, .blog-main {
 .home-main .section-headline h2 {
         color: #1d1d1d;
         font-family: "Kreon", serif;
-        font-weight: lighter;
-        font-size: 20px; 
+        font-weight: 300;
+        font-size: 24px; 
 }
-.home-main .section-headline p {
+.home-main .section-headline h4 {
+    
         font-size: 15px;
         font-family: "Kreon", serif;
+        font-weight: 300;
         color: #929292; 
 }
 
 .home-main .home-section ul {
-    padding-left: 15px;
+    margin-left: 20px;
 }
-.home-main .home-section .img-responsive {
+
+.home-main .home-section .cart-description{
+    height: 70px;
+    width: 250px;
+    margin-left: 25px;
+    overflow: hidden;
+}
+.home-main .home-section .cart-header{
+    margin-left: 20px;
+}
+.home-main .home-section .cart-image{
+   
     width:240px;
     height:125px;
     object-fit:cover;
+    border-top: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+    padding: 3px;
+    margin-left: 20px;
 }
+
+
 .home-main .home-section li {
     color: #929292;
     font-family: "Droid Sans", sans-serif;
@@ -283,11 +304,11 @@ header, footer,  .home-main, .blog-main {
 
 /* MEDIA CAROUSEL */
 
-#media-carousel{
+.media-carousel{
     background-color: #F4F4F4;
     padding: 10px;
 }
-#media-carousel .item > img{
+.media-carousel .item > img{
     background-color: #D7D7D7;
     float: left;
     width: 70px;
@@ -554,10 +575,6 @@ footer .copyright {
 
 /* Review Comments END */
 
-.home-description{
-    height: 70px;
-    overflow: hidden;
-}
 
 
 .panel{
@@ -594,10 +611,30 @@ footer .copyright {
     }
     .home-main .home-section .img-responsive {
     width:100%;
+    }
+    .home-main .home-section .cart-header{
+       margin-left: 0px;
+    }
+    .home-main .home-section .cart-image{
+        margin-left: 0px;
+    }
+    .home-main .home-section .cart-description{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    .testov{
+        display: none;
+    }
+  
     
 }
-    
-    
+
+
+@media (max-width: 991px) {
+    .testov{
+        display: none
+    }
 }
 
 @media (max-width: 767px) {
@@ -623,6 +660,12 @@ footer .copyright {
     }
     .sub-nav {
         display: none; 
+    }
+    .main-slider{
+        display: none;
+    }
+    .home-section{
+        padding-top: 0px;
     }
     
 }

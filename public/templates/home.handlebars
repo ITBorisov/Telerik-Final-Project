@@ -88,22 +88,22 @@
                 <h2>
                     Movie Reviews
                 </h2>
-                <p>
+                <h4>
                     Recent film reviews added from our critics
-                </p>
+                </h4>
             </div>
             <div class="row">
                 {{#each review}}
-                <div class="col-md-4">
-                    <h3 href="#/">
+                <div class="col-md-4 cart">
+                    <h3 href="#/" class="cart-header">
                         {{title}}
                     </h3>
                     {{#if img}}
-                    <img src="{{img}}" class="img-responsive">
+                    <img src="{{img}}" class="img-responsive cart-image">
                     {{else}}
                     <img src="https://i.pinimg.com/736x/06/6f/2c/066f2caf0b4220c70a2fb676ad0cc673--fun-movies-watch-movies.jpg" class="img-responsive">
                     {{/if}}
-                    <p class="home-description">{{description}}</p>
+                    <p class="cart-description">{{description}}</p>
                 </div>
                 {{/each}}
             </div>
@@ -137,7 +137,7 @@
                     <h3>
                         IMDb: Top 12
                     </h3>
-                    <div id="media-carousel" class="carousel slide" data-ride="carousel">
+                    <div id="media-carousel" class="carousel slide media-carousel" data-ride="carousel">
                         <!-- Indicators -->
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
