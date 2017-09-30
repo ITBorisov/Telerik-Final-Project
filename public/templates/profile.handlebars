@@ -1,0 +1,74 @@
+<div class="blog-main">
+	<div class="container-fluid">
+		<p class="blog-path">
+			<a href="#/home">
+                Home
+            </a>
+			<span> &raquo; </span>
+			<a href="#/profile">
+                Profile
+            </a>
+		</p>
+		<div class="blog-title">
+			<h1>Profile</h1>
+		</div>
+		<br>
+		<br>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">{{user.username}}</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<div class="row">
+							<div class="col-md-3 col-lg-3 " align="center">
+								{{#if user._image}}
+								<img alt="User Pic" src={{user._image}} class="img-circle img-responsive"> {{else}}
+								<img alt="User Pic" src="https://lh3.googleusercontent.com/B4Rmc8NPG7fHIGmN65214ppzNGHNa_wuLSSJ6Dz85KJoZ0zlBFnpH16pOJBHpwA0fCs=w300" class="img-circle img-responsive"> {{/if}}
+							</div>
+							<div class=" col-md-9 col-lg-9 ">
+								<table class="profile-table">
+									<tbody>
+										<tr>
+											<td>First Name:</td>
+											<td>{{user.firstName}}</td>
+										</tr>
+										<tr>
+											<td>Last Name:</td>
+											<td>{{user.lastName}}</td>
+										</tr>
+										<tr>
+											<td>E-mail:</td>
+											<td>{{user.email}}</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							
+								<form id="upload-image-form" class="form-group" action="#/profile">
+									<h4>Upload profile picture</h4>
+									<input id="file" type="file" class="form-control" name="uploadedImage" />
+									<div id="imgContainer" class="col-sm-12"></div>
+									<br>
+									<button type="submit" id="submit-image" class="btn btn btn-auth pull-right">Save image <span class="glyphicon glyphicon-send"></span></button>
+									</br>
+								</form>
+							</div>
+						</div>
+						<br>
+							<a href="#/reviews/add" class="btn btn-auth" role="button">NEW REVIEW</a>
+							<a href="#/reviews/add" class="btn btn-auth" role="button">MY REVIEWS</a>
+							<a href="#/reviews/add" class="btn btn-auth" role="button">MY COMMENTS</a>
+						
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+	</div>
+</div>

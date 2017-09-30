@@ -12,8 +12,18 @@ export function loadRegistrationForm(context){
 
             let username = $('#username').val();
             let password = $('#password').val();
+            let firstName = $('#firstName').val();
+            let lastName = $('#lastName').val();
+            let email = $('#email').val();
 
-            register(context, username, password)
+            let user = {
+                username: username,
+                password: password,
+                firstName: firstName,
+                lastName: lastName,
+                email: email
+            }
+            register(context, user)
         })
     })
 }
