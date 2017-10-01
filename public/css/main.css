@@ -87,7 +87,7 @@ header, footer,  .home-main, .blog-main {
     font-family: "Kreon", serif;
     font-weight: 300;
     font-size: 15px;
-    color: #000;
+    color: #1d1d1d;
 }
 
 .navbar-nav > li > a{
@@ -106,7 +106,7 @@ header, footer,  .home-main, .blog-main {
 
 .home-main .sub-nav{
     background: url("../images/subNav.jpg");
-    color: #000; 
+    color: #1d1d1d; 
     font-family: "Kreon";
     font-weight: 300;
     font-size: 15px;    
@@ -125,7 +125,7 @@ header, footer,  .home-main, .blog-main {
     padding-right:15px;
 }
 .home-main .sub-nav li a {
-        color: #000; 
+        color: #1d1d1d; 
         font-family: "Kreon";
 }
 .home-main .sub-nav li a:hover {
@@ -293,7 +293,7 @@ header, footer,  .home-main, .blog-main {
     font-size: 20px;
     font-family: "Kreon", serif;
     font-weight: 300;
-    color: #000;
+    color: #1d1d1d;
     padding-left: 22px;
 }
 
@@ -367,15 +367,15 @@ header, footer,  .home-main, .blog-main {
 .blog-main h1 {
     font-family: "Kreon";
     font-weight: 300;
-    font-size: 25px;
+    font-size: 28px;
     color: #1d1d1d;
     margin-bottom: 5px; 
 }
 .blog-main h3 {
     font-family: "Kreon";
     font-weight: 300;
-    font-size: 20px;
-    color: #929292;
+    font-size: 22px;
+    color: #1d1d1d;
     margin-top: 0; 
 }
 .blog-main a {
@@ -487,6 +487,9 @@ header, footer,  .home-main, .blog-main {
       background: #437d8b;
 }
 /* BLOG-SIDEBAR */
+.aside-review{
+    margin-left: 30px;
+}
 .sidebar{
     margin-left: 20px;
 }
@@ -591,17 +594,20 @@ footer .footer-author{
     padding-bottom: 70px;
 }
 .comment-info{
-    width: 300px;
+    width: 276px;
  
 }
+.comment-text{
+    width: 545px;
+}
 .form-group{
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 .comment-input{
     border: 1px solid #f0f0f0;
     border-radius: 0px;
-       background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
+    background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
     /* Chrome10-25,Safari5.1-6 */
@@ -612,6 +618,8 @@ footer .footer-author{
 
       
 }
+
+
 
 /* Review Comments END */
 
@@ -652,6 +660,9 @@ footer .footer-author{
     .comment-info{
     width: 100%;
  
+    }
+    .comment-text{
+        width: 100%;
     }
     .home-main .home-section .img-responsive {
     width:100%;
