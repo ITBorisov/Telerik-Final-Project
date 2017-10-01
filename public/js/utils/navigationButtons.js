@@ -1,6 +1,13 @@
 /* globals $*/
 
 (function () {
+
+    const dropdownClose = $(".dropdown-close");
+    const dropdownLi = $(".dropdown");
+    dropdownClose.on("click",function(){
+        dropdownLi.removeClass("open")
+    })
+
     let sessionStorageAuthtoken = sessionStorage.getItem('authtoken');
     if (sessionStorageAuthtoken === null) {
         $('#buttonLogin').removeClass('hidden');
