@@ -249,9 +249,7 @@ header, footer,  .home-main, .blog-main {
         color: #929292; 
 }
 
-.home-main .home-section ul {
-    margin-left: 20px;
-}
+
 
 .home-main .home-section .cart-description{
     height: 70px;
@@ -275,6 +273,10 @@ header, footer,  .home-main, .blog-main {
     margin-left: 20px;
 }
 
+.home-main .home-section ul {
+    margin-left: 20px;
+    padding-left: 15px;
+}
 
 .home-main .home-section li {
     color: #929292;
@@ -286,12 +288,13 @@ header, footer,  .home-main, .blog-main {
       text-decoration: none;
       color: #929292; 
 }
+
 .home-main .home-section .row h3{
     font-size: 20px;
     font-family: "Kreon", serif;
     font-weight: 300;
     color: #000;
-    padding-left: 5px;
+    padding-left: 22px;
 }
 
 .home-main .home-section .row p{
@@ -515,6 +518,9 @@ footer{
     border-top: 1px solid #f0f0f0;
     
 }
+footer .footer-colums{
+    padding-left: 45px;
+}
 footer ul {
     padding-left: 15px;
 }
@@ -560,6 +566,12 @@ footer .copyright {
     color: #717171;
     margin-top: 13px;
     margin-bottom: 5px;
+}
+
+footer .footer-author{
+    margin-top: 43px;
+    padding-bottom: 15px;
+    margin-right: 20px;
 }
 /* FOOTER END */
 
