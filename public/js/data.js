@@ -49,6 +49,13 @@ export function addReview(params, authtoken){
         return requester.post(url, JSON.stringify(body), headers);
 }
 
+export function deleteReview(id, authtoken){
+        let url = CONSTANTS.kinveyAppDataUrl + '/reviews' + '/' + id;
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+
+        return requester.del(url, headers);
+}
+
 
 export function getLatestUsers(){
         let url = CONSTANTS.kinveyUsersUrl + '/' + '?query={}&sort={"_kmd": -1}&limit=6';

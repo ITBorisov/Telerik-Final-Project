@@ -1,3 +1,4 @@
+/* globals $, toastr */
 import { load as loadTemplate } from 'templates';
 import { getUserProfileById } from 'data';
 
@@ -13,5 +14,7 @@ export function profileController(context){
             }
 
             context.$element().html(template(userProfile));
+
+            
         })
 }
