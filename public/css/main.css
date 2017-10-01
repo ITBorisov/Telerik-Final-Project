@@ -416,8 +416,18 @@ header, footer,  .home-main, .blog-main {
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 15px;
     margin-top:15px;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+.review-info p{
+    margin: 0px;
+}
+
+.review-content{
+    padding-left: 15px;
+}
+
 
 .review-content .thumbnail {
   width: 200px;
