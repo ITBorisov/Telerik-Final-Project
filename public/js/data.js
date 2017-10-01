@@ -35,6 +35,13 @@ export function getReviewsCategory(params, category){
         return requester.get(url, kinveyAuthHeaders);
 }
 
+export function getMyReviews(collection, creatorId, authtoken){
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + collection + '/' + '?query={"_acl.creator":"' + creatorId + '"}';
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + authtoken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}       
+
 export function addReview(params, authtoken){
         let url = CONSTANTS.kinveyAppDataUrl + '/reviews' ;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };

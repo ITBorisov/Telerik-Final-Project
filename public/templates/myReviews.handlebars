@@ -1,0 +1,59 @@
+<div class="blog-main">
+	<div class="container-fluid">
+		<p class="blog-path">
+			<a href="#/home">
+                Home
+            </a>
+			<span> &raquo; </span>
+           
+			<a href="#/reviews">
+                Reviews
+            </a>
+             <span> &raquo; </span>
+			<a href="#/reviews/myreviews">
+                MyReviews
+            </a>
+		</p>
+		</p>
+		<div class="blog-title">
+			<h1>My Reviews</h1>
+            <h3>{{review.length}} reviews written by me</h3>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-8">
+              {{#each review}}
+                <div class="blog-list">
+                    <div class="blog-review">
+                        <a href="#/"><h3>{{title}}</h3></a>
+                        <div class="review-info">
+                            <p>Posted by <span class="darker">{{author}}</span>
+                                on {{date}} in <span class="darker">{{category}}</span>
+                                | 1 Comments
+                            </p>
+                        </div>
+                        <div class="review-content">
+                            <div class="row">  
+                                <div class="thumbnail">
+                                    <a href="#/">
+                                    {{#if img}}
+                                        <img src="{{img}}" class="img-responsive"> 
+                                    {{else}}
+                                        <img src="https://i.pinimg.com/736x/06/6f/2c/066f2caf0b4220c70a2fb676ad0cc673--fun-movies-watch-movies.jpg" class="img-responsive">                                        
+                                    {{/if}}
+                                    </a>
+                                </div>
+                                <p>{{description}}</p>
+                                <a href="#/reviews/{{_id}}" class="btn btn-custom">Delete</a>
+                                <a href="#/reviews/{{_id}}" class="btn btn-custom">Read More</a>             
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                 </div>
+              {{/each}}
+            </div>
+	</div>
+</div>

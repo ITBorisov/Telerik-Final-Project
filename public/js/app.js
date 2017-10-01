@@ -9,6 +9,7 @@ import { addReviewController } from 'addReviewController';
 import { reviewController } from 'reviewController';
 import { reviewsCategoryController } from 'reviewsCategoryController';
 import { profileController } from 'profileController';
+import { myReviewsController } from 'myReviewsController';
 import * as usersController from 'usersController';
 
 (function () {
@@ -24,23 +25,25 @@ import * as usersController from 'usersController';
 
 		this.get('#/login', usersController.loadLoginForm);
 
-		this.get('#/profile', profileController)
+		this.get('#/profile', profileController);
 
 		this.get('#/reviews/add', addReviewController);
 
-		this.get('#/reviews/Action', reviewsCategoryController)
+		this.get('#/reviews/myreviews', myReviewsController);
+
+		this.get('#/reviews/Action', reviewsCategoryController);
 		
-		this.get('#/reviews/Comedy', reviewsCategoryController)
+		this.get('#/reviews/Comedy', reviewsCategoryController);
 
-		this.get('#/reviews/Crime', reviewsCategoryController)
+		this.get('#/reviews/Crime', reviewsCategoryController);
 
-		this.get('#/reviews/Drama', reviewsCategoryController)
+		this.get('#/reviews/Drama', reviewsCategoryController);
 
-		this.get('#/reviews/Thriller', reviewsCategoryController)
+		this.get('#/reviews/Thriller', reviewsCategoryController);
 
-		this.get('#/reviews/Sci-fi', reviewsCategoryController)
+		this.get('#/reviews/Sci-fi', reviewsCategoryController);
 
-		this.get('#/reviews/:id', reviewController)
+		this.get('#/reviews/:id', reviewController);
 
 	});
 
