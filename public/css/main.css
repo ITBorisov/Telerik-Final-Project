@@ -57,7 +57,7 @@ header, footer,  .home-main, .blog-main {
     margin-top: 1px;
 
 }
-.navbar .nav-search .input-group{
+.navbar .nav-search .search-bar{
     width: 162px;
 }
 
@@ -72,10 +72,11 @@ header, footer,  .home-main, .blog-main {
     padding-left: 13px;
 }
 
-.navbar .nav-search #searchBar .glyphicon-search {
-    font-size: 13px;
-    color: #c2c3c2;
-    margin-top: -3px;
+.navbar .nav-search .search-icon {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    
 }
 
 .navbar .my-navbar{
@@ -202,7 +203,7 @@ header, footer,  .home-main, .blog-main {
     top: 14.9%;
     width: 42.7%;
     height: 71%;
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.55);
     text-align: left;
     padding: 5%;
 }
@@ -212,6 +213,18 @@ header, footer,  .home-main, .blog-main {
     font-weight: 100;
     margin-top: 0;
     color: #fff;
+}
+.btn-carousel-caption{
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(12, 14, 2, 0.2);
+    font-family: "Kreon", serif;
+    font-size: 13px;
+    color: #6d7f83;
+    border-radius: 0px;
+    
 }
 
 /* HOME MAIN CAROUSEL END */
@@ -380,7 +393,7 @@ header, footer,  .home-main, .blog-main {
 }
 .blog-main a {
     text-decoration: none;
-    color: #929292; 
+
 }
 .blog-main .blog-path{
     margin-top: 11px;
@@ -693,12 +706,12 @@ footer .footer-author{
         margin-top: 8px;
         margin-left: 0;
     }
-    .nav-search .input-group {
-        width: 100%;
+    .nav-search .search-bar {
+        
         padding-right: 7px;
     }
-    .nav-search .input-group-sm .form-control {
-        height: 32px;
+    .navbar .nav-search .search-bar{
+        width: 100%;
     }
     .navbar .my-navbar {
         margin-top: 0;
