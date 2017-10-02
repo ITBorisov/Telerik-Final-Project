@@ -90,7 +90,7 @@
         <div class="container-fluid">
             <div class="section-headline">
                 <h2>
-                    Movie Reviews
+                    "Find reviews for new and recent movies in theaters, DVD and Blu-ray releases"
                 </h2>
                 <h4>
                     Recent film reviews added from our critics
@@ -115,27 +115,14 @@
             <div class="row testov">
                 <div class="col-sm-4">
                     <h3>
-                        Lorem lorem
+                        Recent movie reviews
                     </h3>
                     <ul>
+                        {{#each review}}
                         <li>
-                            <a href="#/">Lorem lorem</a>
+                            <a href="#/reviews/{{_id}}">{{title}}</a>
                         </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
-                        <li>
-                            <a href="#/">Lorem lorem</a>
-                        </li>
+                        {{/each}}
                     </ul>
                 </div>
                 <div class="col-sm-8 mediaw">

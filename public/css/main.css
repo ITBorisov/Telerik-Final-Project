@@ -262,7 +262,7 @@ header, footer,  .home-main, .blog-main {
 }
 .home-main .section-headline h4 {
     
-        font-size: 15px;
+        font-size: 18px;
         font-family: "Kreon", serif;
         font-weight: 300;
         color: #929292; 
@@ -375,7 +375,12 @@ header, footer,  .home-main, .blog-main {
     margin-left: 18px;
     padding: 3px;
     border: 1px solid #f0f0f0;
-    box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+}
+
+.media-carousel .item > img:hover{
+    opacity: 0.75;
 }
 
 .carousel-control .rightArrowMedia {
@@ -423,11 +428,17 @@ header, footer,  .home-main, .blog-main {
     color: #1d1d1d;
     margin-top: 0; 
 }
-.blog-main a {
+.blog-main .blog-path a {
     text-decoration: none;
-
+    color: #a8a8a8;
 }
 .blog-main .blog-path{
+    margin-top: 11px;
+    font-size: 14px;
+    font-family: 'Kreon', serif;
+    font-weight: 300;
+}
+.blog-main .blog-path a{
     margin-top: 11px;
     font-size: 14px;
 }
@@ -499,6 +510,7 @@ header, footer,  .home-main, .blog-main {
     padding: 5px 10px;
     font-weight: bold;
     margin-top: 10px;
+    margin-right: 35px;
     border: 1px solid #f0f0f0;
   }
  .btn-custom a{
@@ -542,14 +554,14 @@ header, footer,  .home-main, .blog-main {
     padding-left: 15px;
 }
 .sidebar li {
-    color: #929292;
+    color: #a8a8a8;
     
     font-size: 12px;
     margin-bottom: 5px;
 }
 .sidebar li a {
     text-decoration: none;
-    color: #929292; 
+    color: #a8a8a8; 
 }
 .sidebar h3 {
     color: #1d1d1d;
@@ -559,7 +571,7 @@ header, footer,  .home-main, .blog-main {
     margin-bottom: 13px; 
 }
 .sidebar p {
-    color: #929292;
+    color: #a8a8a8;
     font-family: "Droid Sans", sans-serif;
     font-size: 12px; 
 }
@@ -670,7 +682,7 @@ footer .footer-author{
       float: right; 
 }
 .add-comment{
-    padding-bottom: 70px;
+    padding-bottom: 90px;
 }
 .add-comment h2{
     font-family: "Kreon", serif;
