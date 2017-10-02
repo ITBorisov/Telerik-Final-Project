@@ -94,3 +94,20 @@ export function getUserProfileById(userId, authtoken) {
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
         return requester.get(url, headers);
 }
+
+
+export function addNewComment(params, authtoken, collection) {
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + collection;
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+        let body = params;
+
+        return requester.post(url, JSON.stringify(body), headers);
+}
+
+export function getComments(collection, id, authtoken ){
+        let filter = JSON.stringify({ "reviewId": id });
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + collection + '/?query=' + filter;
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+
+        return requester.get(url, headers);
+}
