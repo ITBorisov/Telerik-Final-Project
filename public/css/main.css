@@ -720,8 +720,10 @@ footer .footer-author{
     .home-main .home-section .cart-header{
        margin-left: 0px;
     }
+    .home-main .home-section .cart-image-container{
+        width: 100%
+    }
     .home-main .home-section .cart-image{
-        width: 100%;
         margin-left: 0px;
     }
     .home-main .home-section .cart-description{
