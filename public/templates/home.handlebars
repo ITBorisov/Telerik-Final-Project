@@ -38,7 +38,7 @@
                 <div class="item active">
                     <img src="../images/Review.jpg" alt="Los Angeles">
                     <div class="carousel-caption">
-                        <h3>Write movie review</h3>
+                        <h1>Write movie review</h1>
                         <p>Register now and write your first movie review!</p>
                         <a href="#/" class="btn btn-carousel-caption">Read more</a>
                     </div>
@@ -47,7 +47,7 @@
                 <div class="item">
                     <img src="../images/Review3.jpg" alt="Chicago">
                     <div class="carousel-caption">
-                        <h3>Chicago</h3>
+                        <h1>Chicago</h1>
                         <p>Thank you, Chicago!</p>
                         <a href="#/" class="btn btn-carousel-caption">Read more</a>
                     </div>
@@ -56,7 +56,7 @@
                 <div class="item">
                     <img src="../images/Review3.jpg" alt="New York">
                     <div class="carousel-caption">
-                        <h3>New York</h3>
+                        <h1>New York</h1>
                         <p>We love the Big Apple!</p>
                         <a href="#/" class="btn btn-carousel-caption">Read more</a>
                     </div>
@@ -66,7 +66,7 @@
                     <img src="../images/Review.jpg" alt="New York"
                          style="width:100%;">
                     <div class="carousel-caption">
-                        <h3>New York</h3>
+                        <h1>New York</h1>
                         <p>We love the Big Apple!</p>
                         <a href="#/" class="btn btn-carousel-caption">Read more</a>
                     </div>
@@ -102,11 +102,12 @@
                     <h3 href="#/" class="cart-header">
                         {{title}}
                     </h3>
-                    {{#if img}}
-                    <img src="{{img}}" class="img-responsive cart-image">
-                    {{else}}
-                    <img src="https://i.pinimg.com/736x/06/6f/2c/066f2caf0b4220c70a2fb676ad0cc673--fun-movies-watch-movies.jpg" class="img-responsive">
-                    {{/if}}
+                    <div class="cart-image-container">
+                        <a href="#/reviews/{{_id}}">
+                            <img src="{{img}}" class="img-responsive cart-image">
+                            <span class="cart-hover-icon"></span>
+                        </a>
+                    </div>
                     <p class="cart-description">{{description}}</p>
                 </div>
                 {{/each}}
