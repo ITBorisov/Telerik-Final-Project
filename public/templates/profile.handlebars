@@ -25,13 +25,17 @@
 					<div class="panel-body panel-default">
 						<div class="row">
 							<div class="col-md-3 col-lg-3 " align="center">
-								{{#if user._image}}
-								<img alt="User Pic" src={{user._image}} class="img-circle img-responsive"> {{else}}
+								{{#if user.image}}
+								<img alt="User Pic" src={{user.image}} class="img-circle img-responsive"> {{else}}
 								<img alt="User Pic" src="https://lh3.googleusercontent.com/B4Rmc8NPG7fHIGmN65214ppzNGHNa_wuLSSJ6Dz85KJoZ0zlBFnpH16pOJBHpwA0fCs=w300" class="img-circle img-responsive"> {{/if}}
 							</div>
 							<div class=" col-md-9 col-lg-9 ">
 								<table class="profile-table">
 									<tbody>
+										<tr>
+											<td>Username:</td>
+											<td>{{user.username}}</td>
+										</tr>
 										<tr>
 											<td>First Name:</td>
 											<td>{{user.firstName}}</td>
@@ -44,6 +48,10 @@
 											<td>E-mail:</td>
 											<td>{{user.email}}</td>
 										</tr>
+										<tr>
+											<td>Registration:</td>
+											<td>{{user.creationTime}}</td>
+										</tr>
 										
 									</tbody>
 								</table>
@@ -53,7 +61,7 @@
 									<input id="file" type="file" class="form-control" name="uploadedImage" />
 									<div id="imgContainer" class="col-sm-12"></div>
 									<br>
-									<button type="submit" id="submit-image" class="btn btn btn-auth pull-right">Save image <span class="glyphicon glyphicon-send"></span></button>
+									<button type="submit" id="submit-image" class="btn btn-auth pull-right">Save image <span class="glyphicon glyphicon-send"></span></button>
 									</br>
 								</form>
 							</div>

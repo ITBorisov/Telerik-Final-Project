@@ -95,6 +95,14 @@ export function getUserProfileById(userId, authtoken) {
         return requester.get(url, headers);
 }
 
+export function addUserProfileImage(user, profileId, authtoken) {
+        let url = CONSTANTS.kinveyUsersUrl + '/' + profileId;
+        let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
+        let body = user;
+
+        return requester.put(url, JSON.stringify(body), headers);
+}
+
 
 export function addNewComment(params, authtoken, collection) {
         let url = CONSTANTS.kinveyAppDataUrl + '/' + collection;

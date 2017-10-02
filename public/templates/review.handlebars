@@ -55,9 +55,13 @@
                         <h2>{{comments.length}} Comments</h2>
                         {{#each comments}}       
                                 <div class="comment-body">
-                                    <img src="{{img}}" class="img-thumbnail comment-photo"> 
+                                    {{#if image}}
+                                    <img src="{{image}}" class="img-thumbnail comment-photo"> 
+                                    {{else}}   
+                                    <img src="../images/comments-img.jpg" class="img-thumbnail comment-photo">
+                                    {{/if}}
                                     <h3>{{name}}</h3>
-                                    <span class="comment-date">{{date}}</span>
+                                    <p class="comment-date">{{date}}</p>
                                     <p class="comment-message">{{message}}</p>
                                 </div>
                         {{/each}}

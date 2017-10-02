@@ -24,7 +24,7 @@ export function reviewController (context){
             let $addComment = $('#addComment');
             
             let date = getDate();
-            let image = '';
+            let image = sessionStorage.getItem('image') || '';
             $addComment.on('submit', function(ev){
                 ev.preventDefault();
                 let name = $('#name').val();

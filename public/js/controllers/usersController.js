@@ -65,9 +65,12 @@ function login(context, user){
         let username = response.username;
         let authtoken = response._kmd.authtoken;
         let userId = response._id;
+        let image = response.image;
+        console.log(response);
         sessionStorage.setItem('username', username);
         sessionStorage.setItem('authtoken', authtoken);
         sessionStorage.setItem('id', userId);
+        sessionStorage.setItem('image', image);
 
         setTimeout(function () {
                 window.location.href = '#/home';

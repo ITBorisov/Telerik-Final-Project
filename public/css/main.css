@@ -664,7 +664,6 @@ footer .footer-author{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 );
     /* IE6-9 */
     border: 1px solid #f0f0f0;
-    padding: 16px 12px 12px 16px;
     margin-bottom: 27px; 
 }
 .comments h2 {
@@ -680,6 +679,12 @@ footer .footer-author{
       font-size: 12px;
       font-style: italic;
       float: right; 
+}
+.comment-photo {
+    width: 68px;
+    height: 68px;
+    float: left;
+    margin-right: 16px; 
 }
 .add-comment{
     padding-bottom: 90px;
