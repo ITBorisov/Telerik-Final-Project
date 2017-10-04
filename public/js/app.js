@@ -2,6 +2,7 @@
 import 'logout';
 import 'navigationButtons';
 import 'toastr-config';
+import 'search';
 
 import { homeController } from 'homeController';
 import { blogController } from 'blogController';

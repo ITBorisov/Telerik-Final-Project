@@ -425,23 +425,22 @@ header, footer,  .home-main, .blog-main {
     font-family: "Kreon";
     font-weight: 300;
     font-size: 22px;
-    color: #1d1d1d;
+    color: #a8a8a8;
     margin-top: 0; 
 }
 .blog-main .blog-path a {
+    font-family: "Kreon";
+    font-weight: 300;
     text-decoration: none;
     color: #a8a8a8;
-}
-.blog-main .blog-path{
-    margin-top: 11px;
-    font-size: 14px;
-    font-family: 'Kreon', serif;
-    font-weight: 300;
-}
-.blog-main .blog-path a{
     margin-top: 11px;
     font-size: 14px;
 }
+.blog-main .blog-path a:last-child {
+    color: #1d1d1d;
+}
+
+
 .blog-main .blog-title{
     background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 41%, #ffffff 49%, #ffffff 58%, #fafafa 100%);
     /* FF3.6-15 */
@@ -460,8 +459,9 @@ header, footer,  .home-main, .blog-main {
     margin-bottom: 21px; 
 }
 
-    
-
+.blog-main .blog-title h3{ 
+    color: 929292;   
+}
 /* BLOG - MAIN END */
 .reblog-review h3{
     color: #1d1d1d;

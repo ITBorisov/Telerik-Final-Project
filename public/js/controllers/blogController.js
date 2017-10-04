@@ -3,7 +3,6 @@ import { getReviews, getLatestUsers, getLatestReview } from 'data';
 
 
 export function blogController (context){
-
     Promise.all([getReviews('reviews'), getLatestUsers(), getLatestReview('reviews'), loadTemplate('blog') ])
         .then(([dataResponse, newestUsers, latestReview, template]) => {
             console.log(newestUsers)
@@ -14,6 +13,7 @@ export function blogController (context){
 			};
 
             context.$element().html(template(reviews));
+			
         })   
     
 }

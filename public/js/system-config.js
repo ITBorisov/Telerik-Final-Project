@@ -15,6 +15,7 @@ System.config({
 		'logout' : 'js/utils/logout.js',
 		'navigationButtons': 'js/utils/navigationButtons.js',
 		'toastr-config': 'js/utils/toastr-config.js',
+		'search': 'js/utils/search.js',
 		'templates': 'js/templates.js',
 
 		// controllers //
