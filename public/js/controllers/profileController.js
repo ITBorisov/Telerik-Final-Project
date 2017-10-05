@@ -1,8 +1,10 @@
 /* globals $, toastr */
 import { load as loadTemplate } from 'templates';
 import { getUserProfileById, addUserProfileImage } from 'data';
+import { guestUserAuthToken, guestUserId } from 'constants'; 
 
-export function profileController(context){
+
+export function myProfile(context){
     let userId = sessionStorage.getItem('id');
     let authtoken = sessionStorage.getItem('authtoken');
 
@@ -59,6 +61,33 @@ export function profileController(context){
                     toastr.info('You must upload a picture first');
                 }
             });  
+        })
+}
+
+
+export function userProfile(context){
+
+    let userId = context.params['id'];  //take from url
+    let authtoken = sessionStorage.getItem('authtoken') || guestUserAuthToken;
+    console.log(userId);
+    if (userId === guestUserId) {
+        toastr.info('The account you are trying to view does not exist');
+        context.redirect('#/home');
+    }
+
+Promise.all([getUserProfileById(userId, authtoken), loadTemplate('profile')])
+        .then(([userData, template]) => {
+            let creationDate  = new Date(userData._kmd['ect']).toDateString().substring(4);
+            userData['creationTime'] = creationDate;
+            let userProfile = {
+                user: userData
+            }
+            
+            context.$element().html(template(userProfile));
+            $('#upload-image-form').remove();
+            $('#new-review').remove();
+            $('#my-reviews').remove();
+            $('#my-comments').remove();
         })
 }
 

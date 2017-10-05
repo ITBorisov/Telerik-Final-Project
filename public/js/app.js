@@ -9,9 +9,9 @@ import { blogController } from 'blogController';
 import { addReviewController } from 'addReviewController';
 import { reviewController } from 'reviewController';
 import { reviewsCategoryController } from 'reviewsCategoryController';
-import { profileController } from 'profileController';
 import { myReviewsController } from 'myReviewsController';
 import * as usersController from 'usersController';
+import * as profileController from 'profileController';
 
 (function () {
 	var sammyApp = Sammy('#app-container', function () {
@@ -26,7 +26,7 @@ import * as usersController from 'usersController';
 
 		this.get('#/login', usersController.loadLoginForm);
 
-		this.get('#/profile', profileController);
+		this.get('#/profile', profileController.myProfile);
 
 		this.get('#/reviews/add', addReviewController);
 
@@ -45,6 +45,8 @@ import * as usersController from 'usersController';
 		this.get('#/reviews/Sci-fi', reviewsCategoryController);
 
 		this.get('#/reviews/:id', reviewController);
+
+		this.get('#/user/profile/', profileController.userProfile)
 
 	});
 
