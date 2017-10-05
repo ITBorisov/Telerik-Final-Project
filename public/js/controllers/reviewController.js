@@ -39,7 +39,15 @@ export function reviewController (context){
                     date: date,
                     image: image
                 };
+                
                 addNewComment(comment, authtoken, 'comments')
+                    .then(response => {
+                            toastr.success('Successfully add new comment');
+                            setTimeout(function () {
+                        
+                                window.location.reload(true);
+                            }, 1000);
+                    })
             })
         })   
     
