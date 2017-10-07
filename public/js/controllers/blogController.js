@@ -13,7 +13,7 @@ export function blogController (context){
 			};
 
             context.$element().html(template(reviews));
-			
+			$(".preloading").fadeOut("slow");
         })   
     
 }

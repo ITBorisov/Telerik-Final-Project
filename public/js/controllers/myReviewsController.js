@@ -13,7 +13,7 @@ export  function myReviewsController(context){
                 review: dataResponse
             }
             context.$element().html(template(myReviews));
-
+            $(".preloading").fadeOut("slow");
 
             $(document).on('click', ".deleteButton", function () {
                let reviewId =  $(this).attr('data-id');

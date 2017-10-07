@@ -17,7 +17,7 @@ export function myProfile(context){
             }
 
             context.$element().html(template(userProfile));
-
+            $(".preloading").fadeOut("slow");
            
             let id = userData._id;
             let username = userData.username;
@@ -84,6 +84,7 @@ Promise.all([getUserProfileById(userId, authtoken), loadTemplate('profile')])
             }
             
             context.$element().html(template(userProfile));
+            $(".preloading").fadeOut("slow");
             $('#upload-image-form').remove();
             $('#new-review').remove();
             $('#my-reviews').remove();

@@ -18,6 +18,7 @@ export function reviewsCategoryController (context){
 			};
             console.log(reviews)
             context.$element().html(template(reviews));
+            $(".preloading").fadeOut("slow");
         })   
     
 }

@@ -19,6 +19,7 @@ export function reviewController (context){
 
             console.log(reviews)
             context.$element().html(template(reviews));
+            $(".preloading").fadeOut("slow");
 
 
             let $addComment = $('#addComment');
@@ -46,7 +47,7 @@ export function reviewController (context){
                             setTimeout(function () {
                         
                                 window.location.reload(true);
-                            }, 1000);
+                            }, 700);
                     })
             })
         })   

@@ -13,6 +13,7 @@ import { myReviewsController } from 'myReviewsController';
 import * as usersController from 'usersController';
 import * as profileController from 'profileController';
 
+
 (function () {
 	var sammyApp = Sammy('#app-container', function () {
 
@@ -53,4 +54,5 @@ import * as profileController from 'profileController';
 	$(function () {
 		sammyApp.run('#/');
 	});
+
 })();

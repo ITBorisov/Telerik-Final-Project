@@ -7,6 +7,7 @@ export function loadRegistrationForm(context){
     loadTemplate('register')
     .then(template => {
         context.$element().html(template());
+        $(".preloading").fadeOut("slow");
         let $registerForm = $('#register');
         $registerForm.on('submit', function(ev){
             ev.preventDefault();
@@ -35,6 +36,7 @@ export function loadLoginForm(context){
     loadTemplate('login')
     .then(template => {
         context.$element().html(template());
+        $(".preloading").fadeOut("slow");
         let $loginForm = $('#login');
         $loginForm.on('submit', function(ev){
             ev.preventDefault();
@@ -57,7 +59,7 @@ function register(context, user){
             setTimeout(function () {
                 window.location.href = '#/login';
                 window.location.reload(true);
-            }, 1000);
+            }, 700);
         })
 }
 
@@ -76,8 +78,8 @@ function login(context, user){
         sessionStorage.setItem('image', image);
 
         setTimeout(function () {
-                window.location.href = '#/home';
+                window.location.href = '#/profile';
                 window.location.reload(true);
-            }, 1000);
+            }, 700);
     })
 }

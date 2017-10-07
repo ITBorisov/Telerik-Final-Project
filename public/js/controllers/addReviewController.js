@@ -6,7 +6,8 @@ export function addReviewController (context){
     loadTemplate('addReview')
         .then(template => {
             context.$element().html(template());
-
+            $(".preloading").fadeOut("slow");
+            
             let $addReviewForm = $('#addReview');
             $addReviewForm.on('submit', function(ev){
             ev.preventDefault();
