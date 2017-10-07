@@ -16,7 +16,10 @@ System.config({
 		'navigationButtons': 'js/utils/navigationButtons.js',
 		'toastr-config': 'js/utils/toastr-config.js',
 		'search': 'js/utils/search.js',
+		'reviewValidator': 'js/utils/validators/reviewValidator.js',
+		'userValidator': 'js/utils/validators/userValidator.js',
 		'templates': 'js/templates.js',
+		
 
 		// controllers //
         'homeController': 'js/controllers/homeController.js',
@@ -26,7 +29,13 @@ System.config({
 		'reviewController': 'js/controllers/reviewController.js',
 		'reviewsCategoryController': 'js/controllers/reviewsCategoryController.js',
 		'profileController': 'js/controllers/profileController.js',
-		'myReviewsController': 'js/controllers/myReviewsController.js'
+		'myReviewsController': 'js/controllers/myReviewsController.js',
+
+		// models //
+		'user-model': 'js/models/user-model.js',
+		'review-model': 'js/models/review-mode.js',
+		'comment-model': 'js/models/comment-model.js',
+		'model-factory': 'js/models/model-factory.js'
 		
 		
 	}

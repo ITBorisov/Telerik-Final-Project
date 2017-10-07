@@ -65,10 +65,15 @@ export function getLatestUsers(){
         return requester.get(url, kinveyAuthHeaders);
 }
 
-export function registerUser(newUser, password) {
+export function registerUser(newUser) {
         let url = CONSTANTS.kinveyUsersUrl;
         let headers = CONSTANTS.kinveyBasicHeaders;
-        let body = newUser;
+        let body = { "username": newUser._username, 
+        "password": newUser._password, 
+        "firstName": newUser._firstName,
+        "lastName": newUser._lastName,
+        "email": newUser._email 
+        };
 
         return requester.post(url, JSON.stringify(body), headers);
 }

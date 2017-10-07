@@ -1,5 +1,6 @@
 import { load as loadTemplate } from 'templates';
 import {loginUser, registerUser} from 'data';
+import { createUser } from 'model-factory';
 
 export function loadRegistrationForm(context){
 
@@ -16,12 +17,14 @@ export function loadRegistrationForm(context){
             let lastName = $('#lastName').val();
             let email = $('#email').val();
 
-            let user = {
-                username: username,
-                password: password,
-                firstName: firstName,
-                lastName: lastName,
-                email: email
+            
+            let user;
+            try {
+               user = createUser(username, password, email, firstName, lastName);
+            }
+            catch(e){
+                toastr.warning('Please fill all fields correct!');
+                return;
             }
             register(context, user)
         })
@@ -46,8 +49,8 @@ export function loadLoginForm(context){
 }
 
 
-function register(context, username, password){
-    registerUser(username, password)
+function register(context, user){
+    registerUser(user)
         .then(respose => {
             toastr.success('Successful registration')
 
