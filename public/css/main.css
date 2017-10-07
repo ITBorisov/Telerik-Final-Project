@@ -506,12 +506,11 @@ header, footer,  .home-main, .blog-main {
     font-weight: bold;
     color: #1d1d1d;
     font-family: 'Kreon', serif;
-    float: right;
     padding: 5px 10px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-right: 35px;
+    float: right;
     border: 1px solid #f0f0f0;
+    border-radius: 6px;
   }
  .btn-custom a{
     color: #1d1d1d;
@@ -652,7 +651,7 @@ footer .footer-author{
     margin-top: 48px; 
 }
 
- .comment-body {
+ .comment-body:first-of-type {
     background: #fafafa;
     /* Old browsers */
     background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 21%, #ffffff 83%, #fafafa 100%);
@@ -664,7 +663,34 @@ footer .footer-author{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 );
     /* IE6-9 */
     border: 1px solid #f0f0f0;
-    margin-bottom: 27px; 
+    margin-bottom: 27px;
+    margin-right: 0px; 
+    padding: 15px;
+    width: 100%;
+    float: right;
+}
+
+.comment-body {
+    background: #fafafa;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 21%, #ffffff 83%, #fafafa 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fafafa 0%, #ffffff 21%, #ffffff 83%, #fafafa 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fafafa 0%, #ffffff 21%, #ffffff 83%, #fafafa 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 );
+    /* IE6-9 */
+    border: 1px solid #f0f0f0;
+    margin-bottom: 27px;
+    margin-right: 0px; 
+    padding: 15px;
+    width: 81%;
+    float: right;
+}
+
+.comment-image{
+    padding: 0px;
 }
 .comments h2 {
       font-family: "Kreon", serif;
@@ -672,6 +698,14 @@ footer .footer-author{
       font-size: 24px;
       color: #1d1d1d;
       display: inline-block; 
+}
+.comments h3 {
+      font-family: "Kreon", serif;
+      font-weight: 300;
+      font-size: 20px;
+      color: #1d1d1d;
+      display: inline-block; 
+      margin-bottom: 5px;
 }
 .comment-body .comment-date {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -681,10 +715,18 @@ footer .footer-author{
       float: right; 
 }
 .comment-photo {
+    background-color: #fff;
     width: 68px;
     height: 68px;
     float: left;
     margin-right: 16px; 
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    object-fit: cover
+}
+.comment-message{
+    margin-bottom: 0px;
 }
 .add-comment{
     padding-bottom: 90px;
@@ -791,6 +833,9 @@ footer .footer-author{
     }
     .testov{
         display: none;
+    }
+    .comment-body{
+        width: 100%;
     }
   
     

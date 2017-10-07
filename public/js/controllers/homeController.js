@@ -1,13 +1,14 @@
 import { load as loadTemplate } from 'templates';
-import { getLatestReview } from 'data';
+import { getLatestReview, getLatestUsers } from 'data';
 
 
 export function homeController (context){
-    Promise.all([getLatestReview('reviews'), loadTemplate('home') ])
-        .then(([dataResponse, template]) => {
+    Promise.all([getLatestReview('reviews'),getLatestUsers(), loadTemplate('home') ])
+        .then(([dataResponse, newestUsers, template]) => {
             
             let reviews = {
-				review: dataResponse
+				review: dataResponse,
+                users: newestUsers
 			};
 
             context.$element().html(template(reviews));

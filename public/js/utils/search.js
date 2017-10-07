@@ -39,7 +39,9 @@ export function search(allReviews, text){
     maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: [
-      'author'
+      'author',
+      'description',
+      'reviewText'
     ]
   };
 let fuse = new Fuse(allReviews, options);

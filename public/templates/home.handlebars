@@ -115,12 +115,12 @@
             <div class="row testov">
                 <div class="col-sm-4">
                     <h3>
-                        Recent movie reviews
+                        Recently Registered Critics
                     </h3>
                     <ul>
-                        {{#each review}}
+                        {{#each users}}
                         <li>
-                            <a href="#/reviews/{{_id}}">{{title}}</a>
+                            <a href="#/user/profile/?id={{_id}}">{{firstName}} {{lastName}}</a>
                         </li>
                         {{/each}}
                     </ul>

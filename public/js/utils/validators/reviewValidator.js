@@ -21,8 +21,6 @@ export function validateReview(value) {
 }
 
 
-
-
 function validateString(value, minLength, maxLength, field) {
     if (value.length < minLength || value.length > maxLength) {
         let errMessage = `Between ${minLength} and ${maxLength} characters`;
