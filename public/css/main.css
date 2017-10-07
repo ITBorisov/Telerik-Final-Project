@@ -484,6 +484,7 @@ header, footer,  .home-main, .blog-main {
     margin-top:15px;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: #d9d9d9;
 }
 
 .review-info p{
@@ -530,7 +531,8 @@ header, footer,  .home-main, .blog-main {
       background: #437d8b;
 }
 .darker{
-    color: #437d8b;
+    color: #b6b6b6;
+  
 }
 /* BLOG - SECTION */
 
@@ -734,6 +736,9 @@ footer .footer-author{
     border: 1px solid #ddd;
     border-radius: 0px;
     object-fit: cover
+}
+.form-comment{
+    margin-left: 0px;
 }
 .comment-message{
     margin-bottom: 0px;
