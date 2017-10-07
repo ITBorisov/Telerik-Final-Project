@@ -33,7 +33,7 @@ System.config({
 
 		// models //
 		'user-model': 'js/models/user-model.js',
-		'review-model': 'js/models/review-mode.js',
+		'review-model': 'js/models/review-model.js',
 		'comment-model': 'js/models/comment-model.js',
 		'model-factory': 'js/models/model-factory.js'
 		

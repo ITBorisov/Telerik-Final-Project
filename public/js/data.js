@@ -42,10 +42,17 @@ export function getMyReviews(collection, creatorId, authtoken){
         return requester.get(url, kinveyAuthHeaders);
 }       
 
-export function addReview(params, authtoken){
+export function addReview(review, authtoken){
         let url = CONSTANTS.kinveyAppDataUrl + '/reviews' ;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
-        let body = params;
+        let body = { "category": review._category, 
+        "title": review._title, 
+        "description": review._description,
+        "reviewText": review._reviewText,
+        "author": review._author,
+        "date": review._date,
+        "img": review._image 
+        };
         return requester.post(url, JSON.stringify(body), headers);
 }
 

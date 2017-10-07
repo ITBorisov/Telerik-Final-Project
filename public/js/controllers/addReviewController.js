@@ -1,5 +1,6 @@
 import { load as loadTemplate } from 'templates'
 import { addReview } from 'data';
+import { createReview } from 'model-factory';
 
 export function addReviewController (context){
     loadTemplate('addReview')
@@ -15,28 +16,29 @@ export function addReviewController (context){
             let category = $('#category').val();
             let reviewText = $('#reviewText').val();
             
-            let currentDate = getDate();
+            let date = getDate();
             /* upload image */
-            let images = [];
+            let image = [];
 				if ($('#imgContainer').find('img').length > 0) {
 					let imagesFromForm = $('#imgContainer').find('img').each((i, img) => {
 						let $img = $(img);
-						images.push($img.attr('src'));
+						image.push($img.attr('src'));
 					});
 				}
 
             let authtoken = sessionStorage.getItem('authtoken');
             let author = sessionStorage.getItem('username');
-            let review  = {
-                author: author,
-                reviewText: reviewText,
-                title: title,
-                description: description,
-                category: category,
-                date: currentDate,
-                img: images
-            }
+
             
+            
+            let review;
+            try {
+               review = createReview(category, title, description, reviewText, author, date, image);
+            }
+            catch(e){
+                toastr.warning('Please fill all fields correct!');
+                return;
+            }
             
             addReview(review, authtoken)
                 .then(response => {

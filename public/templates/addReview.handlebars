@@ -24,7 +24,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Category</label>
                         <div class="col-sm-8 inputGroupContainer">
-                            <select name="category" id="category" class="form-control">
+                            <select name="category" id="category" class="form-control" required>
                                 <option value=""></option>
                                 <option value="Action">Action</option>
                                 <option value="Comedy">Comedy</option>
@@ -40,7 +40,7 @@
                         <div class="col-sm-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <input id="title" placeholder="Title of movie" name="title" class="form-control" type="text">
+                                <input id="title" placeholder="Title of movie" name="title" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                         <div class="col-sm-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea id="description" placeholder="Short description" name="description" class="form-control"></textarea>
+                                <textarea id="description" placeholder="Short description" name="description" class="form-control" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -59,14 +59,14 @@
                         <div class="col-sm-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea id="reviewText" name="reviewText" placeholder="Text of yours review" class="form-control" cols="40" rows="10"></textarea>
+                                <textarea id="reviewText" name="reviewText" placeholder="Text of yours review" class="form-control" cols="40" rows="10" required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Upload images</label>
                         <div class="col-sm-8 inputGroupContainer">
-                            <input id="file" type="file" class="form-control" name="uploadedImage" onchange="show(this)" multiple="multiple" />
+                            <input id="file" type="file" class="form-control" name="uploadedImage" onchange="show(this)" multiple="multiple" required/>
                         </div>
                     </div>
                     <div id="imgContainer" class="col-sm-12"></div>
