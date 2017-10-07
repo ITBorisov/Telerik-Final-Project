@@ -825,6 +825,7 @@ footer .footer-author{
     }
     .home-main .home-section .cart-image{
         margin-left: 0px;
+        width: 45%;
     }
     .home-main .home-section .cart-description{
         width: 100%;
@@ -842,6 +843,9 @@ footer .footer-author{
 }
 
 @media (max-width: 767px) {
+    .navbar {
+        margin-top: 0px;
+    }
     .font-icons {
         display: none;
     }
