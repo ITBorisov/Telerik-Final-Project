@@ -795,8 +795,30 @@ footer .footer-author{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 );
     /* IE6-9 */
 }
-
-
+.pegination{
+    width: 100%;
+    height: 50px;
+}
+.pegination ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    float: right;
+}
+.pegination li {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+}
+.pegination li a {
+        color: #1d1d1d; 
+        font-family: "Kreon";
+}
+.pegination li a:hover {
+    color: #437d8b;
+    text-decoration: none; 
+}
 	
 /* media */
 
@@ -887,7 +909,15 @@ footer .footer-author{
     .home-main .home-section{
         margin-top:0px;
     }
-    
+    .aside-review {
+        margin: 0px;
+    }
+    .sidebar{
+        margin: 0px;
+    }
+    .pegination ul{
+        float: left;
+    }
 }
 
 
