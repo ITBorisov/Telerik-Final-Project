@@ -1,22 +1,22 @@
 /* globals $ */
 export function validateTitle(value) {
     let titleField = $('#title');
-    let stringRegex = /^[a-zA-Z0-9\- ]+$/;
-    validateString(value, 3, 15, titleField);
+    let stringRegex = /.+/;
+    validateString(value, 3, 30, titleField);
     validateWithRegex(value, stringRegex, 'Only latin characters!', titleField);
 }
 
 export function validateDescription(value) {
     let descriptionField = $('#description');
-    var descriptionRegex = /^[a-zA-Z0-9\- ]+$/;
-    validateString(value, 20, 250, descriptionField);
+    var descriptionRegex = /.+/;
+    validateString(value, 20, 800, descriptionField);
     validateWithRegex(value, descriptionRegex, 'Only A-Z, a-z, 0-9 and -', descriptionField);
 }
 
 export function validateReview(value) {
     let reviewField = $('#reviewText');
-    var reviewRegex = /^[a-zA-Z0-9\- ]+$/;
-    validateString(value, 20, 500, reviewField);
+    var reviewRegex = /.+/;
+    validateString(value, 20, 1300, reviewField);
     validateWithRegex(value, reviewRegex, 'Only A-Z, a-z, 0-9 and -', reviewField);
 }
 
