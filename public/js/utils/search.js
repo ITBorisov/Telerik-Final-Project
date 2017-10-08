@@ -11,7 +11,7 @@ $('#search').on('click', function(e){
       
 
 
-   Promise.all([getReviews('reviews'), getLatestUsers(), getLatestReview('reviews'), loadTemplate('blog') ])
+   Promise.all([getReviews('reviews'), getLatestUsers(), getLatestReview('reviews', 6), loadTemplate('blog') ])
         .then(([dataResponse, newestUsers, latestReview, template]) => {
             let searchResult = search(dataResponse, input)
 

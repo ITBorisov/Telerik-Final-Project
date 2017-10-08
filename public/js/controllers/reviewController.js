@@ -7,7 +7,7 @@ export function reviewController (context){
     let id = context.params.id;
     let authtoken = sessionStorage.getItem('authtoken') || guestUserAuthToken;
 
-    Promise.all([getReview('reviews', id), getLatestUsers(), getLatestReview('reviews'), getComments('comments', id, authtoken), loadTemplate('review') ])
+    Promise.all([getReview('reviews', id), getLatestUsers(), getLatestReview('reviews', 6), getComments('comments', id, authtoken), loadTemplate('review') ])
         .then(([dataResponse, newestUsers, latestReview, dataComments, template]) => {
          
             let reviews = {

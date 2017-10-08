@@ -8,7 +8,7 @@ export function reviewsCategoryController (context){
     let path = context.path;
     let category = path.substring(11)
     
-    Promise.all([getReviewsCategory('reviews', category), getLatestUsers(), getLatestReview('reviews'), loadTemplate('reviewsCategory') ])
+    Promise.all([getReviewsCategory('reviews', category), getLatestUsers(), getLatestReview('reviews', 6), loadTemplate('reviewsCategory') ])
         .then(([dataResponse, newestUsers, latestReview, template]) => {
             let reviews = {
 				review: dataResponse,
