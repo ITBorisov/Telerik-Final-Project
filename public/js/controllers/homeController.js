@@ -4,7 +4,7 @@ import { getLatestReview, getLatestUsers } from 'data';
 
 export function homeController (context){
 
-    Promise.all([getLatestReview('reviews', 3),getLatestUsers(), loadTemplate('home') ])
+    Promise.all([getLatestReview('reviews', 3),getLatestUsers(6), loadTemplate('home') ])
         .then(([dataResponse, newestUsers, template]) => {
             
             let reviews = {

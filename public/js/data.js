@@ -64,8 +64,8 @@ export function deleteById(colection, id, authtoken){
 }
 
 
-export function getLatestUsers(){
-        let url = CONSTANTS.kinveyUsersUrl + '/' + '?query={}&sort={"_kmd": -1}&limit=6';
+export function getLatestUsers(count){
+        let url = CONSTANTS.kinveyUsersUrl + '/' + '?query={}&sort={"_kmd": -1}&limit=' + count;
         let guestUserAuthToken = CONSTANTS.guestUserAuthToken;
         const kinveyAuthHeaders = { 'Authorization': "Kinvey " + guestUserAuthToken };
 
