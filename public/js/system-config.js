@@ -31,6 +31,7 @@ System.config({
 		'profileController': 'js/controllers/profileController.js',
 		'myReviewsController': 'js/controllers/myReviewsController.js',
 		'myCommentsController': 'js/controllers/myCommentsController.js',
+		'criticsController': 'js/controllers/criticsController.js',
 
 		// models //
 		'user-model': 'js/models/user-model.js',

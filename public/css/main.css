@@ -822,8 +822,10 @@ footer .footer-author{
 	
 /* media */
 
-@media (max-width: 991px) {
-  
+@media (max-width: 1024px) {
+  .testov{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -906,8 +908,13 @@ footer .footer-author{
     .main-slider{
         display: none;
     }
+    
     .home-main .home-section{
         margin-top:0px;
+    }
+    .home-main .home-section .cart-image{
+        margin-left: 0px;
+        width: 100%;
     }
     .review-content .thumbnail {
         width: 100%;
@@ -921,6 +928,9 @@ footer .footer-author{
     }
     .pegination ul{
         float: left;
+    }
+    .footer-colums{
+        display: none;
     }
 }
 
