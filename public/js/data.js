@@ -56,8 +56,8 @@ export function addReview(review, authtoken){
         return requester.post(url, JSON.stringify(body), headers);
 }
 
-export function deleteReview(id, authtoken){
-        let url = CONSTANTS.kinveyAppDataUrl + '/reviews' + '/' + id;
+export function deleteById(colection, id, authtoken){
+        let url = CONSTANTS.kinveyAppDataUrl +  '/' + colection + '/' + id;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
 
         return requester.del(url, headers);

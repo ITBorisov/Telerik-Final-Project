@@ -1,6 +1,6 @@
 import {load as loadTemplate} from 'templates';
 import { getMyReviews } from 'data';
-import { deleteReview } from 'data';
+import { deleteById } from 'data';
 
 export  function myReviewsController(context){
 
@@ -17,7 +17,7 @@ export  function myReviewsController(context){
 
             $(document).on('click', ".deleteButton", function () {
                let reviewId =  $(this).attr('data-id');
-               deleteReview(reviewId, authToken)
+               deleteById('reviews', reviewId, authToken)
                     .then(response => {
 						toastr.success('Successfully delete');
 						setTimeout(function () {
