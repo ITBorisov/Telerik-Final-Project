@@ -652,7 +652,8 @@ footer .copyright {
 footer .footer-author{
     margin-top: 43px;
     padding-bottom: 15px;
-    margin-right: 20px;
+    margin-right: 35px;
+    float: right;
 }
 /* FOOTER END */
 
@@ -796,8 +797,8 @@ footer .footer-author{
     /* IE6-9 */
 }
 .pegination{
-    width: 100%;
-    height: 50px;
+    height: 60px;
+    margin-top: 25px;
 }
 .pegination ul {
     padding: 0px;
@@ -929,8 +930,16 @@ footer .footer-author{
     .pegination ul{
         float: left;
     }
+    footer{
+        padding-top:0px;
+    }
     .footer-colums{
         display: none;
+    }
+    footer .footer-author{
+        padding: 5px;
+        margin: 0px;
+        float: none;
     }
 }
 
