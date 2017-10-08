@@ -90,7 +90,7 @@
             <div class="col-sm-3 aside-review">
                 <aside class="sidebar">
                      <h3>
-                        Categories
+                        Movie Genres
                     </h3>
                     <ul>
                         <li>
@@ -114,7 +114,7 @@
                     </ul>
                 
                     <h3>
-                        New reviews
+                        Recently Posted Reviews
                     </h3>
                     <ul>
                         {{#each newReviews}}
@@ -126,12 +126,12 @@
 
                  
                       <h3>
-                        New users
+                        Recently Registered Critics
                     </h3>
                     <ul>
                         {{#each users}}
                         <li>
-                            <a href="#/user/profile/?id={{_id}}">{{username}}</a>
+                            <a href="#/user/profile/?id={{_id}}">{{firstName}} {{lastName}}</a>
                         </li>
                         {{/each}}
                     </ul>
