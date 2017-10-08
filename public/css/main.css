@@ -377,7 +377,7 @@ header, footer,  .home-main, .blog-main {
     border-radius: 5px;
     padding: 10px;
 }
-.media-carousel .item > img{
+.media-carousel .item .media-container {
     background-color: #fff;
     float: left;
     width: 55px;
@@ -389,8 +389,28 @@ header, footer,  .home-main, .blog-main {
     border-right: 1px solid #d1d1d1;
 }
 
-.media-carousel .item > img:hover{
-    opacity: 0.75;
+.media-carousel .item .media-container a img{
+   width: 48px;
+   height: 48px;
+}
+
+.media-carousel .item .media-container a:hover{
+    opacity: 0.50;
+}
+
+.media-carousel .item .media-container a:hover .media-hover-icon{
+   visibility: visible;
+}
+
+.media-carousel .item .media-container a > .media-hover-icon {
+    position: relative;
+    left: 9px;
+    bottom: 42px;
+    display: inline-block;
+    width: 60px;
+    height: 37px;
+    background: url(../images/media-hover-icon.png) no-repeat;
+    visibility: hidden;      
 }
 
 .carousel-control .rightArrowMedia {
@@ -821,6 +841,9 @@ footer .footer-author{
     text-decoration: none; 
 }
 	
+.form-group{
+    margin-left: 0px;
+}
 /* media */
 
 @media (max-width: 1024px) {
