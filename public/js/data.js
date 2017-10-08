@@ -131,3 +131,10 @@ export function getComments(collection, id, authtoken ){
 
         return requester.get(url, headers);
 }
+
+export function getMyComments(collection, creatorId, authtoken){
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + collection + '/' + '?query={"_acl.creator":"' + creatorId + '"}';
+        const kinveyAuthHeaders = { 'Authorization': "Kinvey " + authtoken };
+
+        return requester.get(url, kinveyAuthHeaders);
+}   

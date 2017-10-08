@@ -10,6 +10,7 @@ import { addReviewController } from 'addReviewController';
 import { reviewController } from 'reviewController';
 import { reviewsCategoryController } from 'reviewsCategoryController';
 import { myReviewsController } from 'myReviewsController';
+import { myCommentsController } from 'myCommentsController';
 import * as usersController from 'usersController';
 import * as profileController from 'profileController';
 
@@ -32,6 +33,8 @@ import * as profileController from 'profileController';
 		this.get('#/reviews/add', addReviewController);
 
 		this.get('#/reviews/myreviews', myReviewsController);
+
+		this.get('#/reviews/myComments', myCommentsController)
 
 		this.get('#/reviews/Action', reviewsCategoryController);
 		
