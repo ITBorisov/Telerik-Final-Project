@@ -325,6 +325,7 @@ header, footer,  .home-main, .blog-main {
     border-right: 2px solid #f0f0f0;
     padding: 3px;
     margin-left: 20px;
+    object-position: 100% 5%;
 }
 
 
