@@ -25,8 +25,8 @@
                     <div class="blog-review">
                         <a href="#/"><h1>{{title}}</h1></a>
                         <div class="review-info">
-                            <p>Posted by <span class="darker">{{author}}</span>
-                                on {{date}} in <span class="darker">{{category}}</span>
+                            <p>Posted by <a href="#/user/profile/?id={{_acl.creator}}"><span class="darker">{{author}}</span></a>
+                                on {{date}} in <a href="#/reviews/{{category}}"><span class="darker">{{category}}</span></a>
                                 | 1 Comments
                             </p>
                         </div>

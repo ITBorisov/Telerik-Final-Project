@@ -453,6 +453,9 @@ header, footer,  .home-main, .blog-main {
     color: #1d1d1d;
     margin-bottom: 5px; 
 }
+.blog-main a{
+    text-decoration: none;
+}
 .blog-main h3 {
     font-family: "Kreon";
     font-weight: 300;
@@ -951,6 +954,9 @@ footer .footer-author{
     }
     .sidebar{
         margin: 0px;
+    }
+    .sidebar li {
+        font-size: 18px;
     }
     .pegination ul{
         float: left;
