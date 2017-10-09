@@ -57,7 +57,7 @@ export function addReview(review, authtoken){
 }
 
 export function deleteById(colection, id, authtoken){
-        let url = CONSTANTS.kinveyAppDataUrl +  '/' + colection + '/' + id;
+        let url = CONSTANTS.kinveyAppDataUrl + '/' + colection + '/' + id;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
 
         return requester.del(url, headers);
@@ -102,7 +102,7 @@ export function logoutUser(authtoken) {
 
 
 export function getUserProfileById(userId, authtoken) {
-        let url = CONSTANTS.kinveyUsersUrl + '/' + userId
+        let url = CONSTANTS.kinveyUsersUrl + '/' + userId;
         let headers = { 'Authorization': CONSTANTS.kinveyUserAuthorization + authtoken };
         return requester.get(url, headers);
 }

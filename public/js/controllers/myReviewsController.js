@@ -1,3 +1,4 @@
+/* globals $, toastr */
 import {load as loadTemplate} from 'templates';
 import { getMyReviews } from 'data';
 import { deleteById } from 'data';

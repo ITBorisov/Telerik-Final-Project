@@ -10,11 +10,11 @@ export function myProfile(context){
 
     Promise.all([getUserProfileById(userId, authtoken), loadTemplate('profile')])
         .then(([userData, template]) => {
-            let creationDate  = new Date(userData._kmd['ect']).toDateString().substring(4);
+            let creationDate = new Date(userData._kmd['ect']).toDateString().substring(4);
             userData['creationTime'] = creationDate;
             let userProfile = {
                 user: userData
-            }
+            };
 
             context.$element().html(template(userProfile));
             $(".preloading").fadeOut("slow");
@@ -31,7 +31,7 @@ export function myProfile(context){
                 firstName: firstName,
                 lastName: lastName,
                 email: email
-            }
+            };
 
 
             let input = $('#file');
@@ -104,7 +104,7 @@ function showImage(input) {
             .attr('src', e.target.result)
             .addClass('img-thumbnail')
             .appendTo(imgContainer);
-        }
+        };
         fileReader.readAsDataURL(img);
     }
 }

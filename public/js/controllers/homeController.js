@@ -1,3 +1,4 @@
+/* globals $, toastr */
 import { load as loadTemplate } from 'templates';
 import { getLatestReview, getLatestUsers } from 'data';
 
@@ -14,6 +15,6 @@ export function homeController (context){
 
             context.$element().html(template(reviews));
             $(".preloading").fadeOut("slow");
-        })   
+        }); 
     
 }

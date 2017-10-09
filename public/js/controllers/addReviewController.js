@@ -1,4 +1,5 @@
-import { load as loadTemplate } from 'templates'
+/* globals $, toastr */
+import { load as loadTemplate } from 'templates';
 import { addReview } from 'data';
 import { createReview } from 'model-factory';
 
@@ -45,10 +46,10 @@ export function addReviewController (context){
                 .then(response => {
                     toastr.success('Successfully created new review');
                     context.redirect('#/reviews');
-                })
+                });
 
-        })
-        })
+        });
+        });
 }
 
 function getDate(){
@@ -64,7 +65,7 @@ function getDate(){
     let day = date.getDate();
     let year = date.getFullYear();
 
-    let currentDate = month + ' ' + day + ', ' + year
+    let currentDate = month + ' ' + day + ', ' + year;
 
     return currentDate;
 }
