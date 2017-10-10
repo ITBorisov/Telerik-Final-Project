@@ -33,9 +33,11 @@ header, footer,  .home-main, .blog-main {
     border-radius: 0px;
     border: 0px;
     
-    -webkit-box-shadow: 0px 4px 8px -4px rgba(203,203,203,1);
-    -moz-box-shadow: 0px 4px 8px -4px rgba(203,203,203,1);
-    box-shadow: 0px 4px 8px -4px rgba(203,203,203,1);
+    -webkit-box-shadow: inset 0px 51px 21px -11px rgba(252,252,252,1);
+    -moz-box-shadow: inset 0px 51px 21px -11px rgba(252,252,252,1);
+    box-shadow: inset 0px 51px 21px -11px rgba(252,252,252,1);
+    
+
 }
 
 .navbar .my-brand {
@@ -84,6 +86,7 @@ header, footer,  .home-main, .blog-main {
     border-right: none;
     font-style: italic;
     padding-left: 13px;
+    
 }
 
 .navbar .nav-search .search-icon {
@@ -129,6 +132,12 @@ header, footer,  .home-main, .blog-main {
     background-size: cover;
     text-transform: uppercase;
     border-top: 1px solid #cbcbcb;
+   
+    box-shadow: inset 0px 3px 10px -2px #E6E6E6;
+    -webkit-box-shadow: inset 0px 3px 10px -2px #E6E6E6;
+    -moz-box-shadow: inset 0px 3px 10px -2px #E6E6E6;
+    -o-box-shadow: inset 0px 3px 10px -2px #E6E6E6;
+
     
 }
 .home-main .sub-nav ul {
