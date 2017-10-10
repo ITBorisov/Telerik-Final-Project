@@ -86,6 +86,11 @@ header, footer,  .home-main, .blog-main {
     border-right: none;
     font-style: italic;
     padding-left: 13px;
+    -webkit-box-shadow: inset 2px 10px 12px 0px rgba(245,245,245,1);
+-moz-box-shadow: inset 2px 10px 12px 0px rgba(245,245,245,1);
+box-shadow: inset 2px 10px 12px 0px rgba(245,245,245,1);
+
+
     
 }
 
