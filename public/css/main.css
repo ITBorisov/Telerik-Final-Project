@@ -805,8 +805,12 @@ footer .footer-author{
 .comment-text{
     width: 545px;
 }
+.form-horizontal .form-group {
+    
+}
 .form-group{
     margin-bottom: 7px;
+    margin-left: 0px;
 }
 
 .comment-input{
